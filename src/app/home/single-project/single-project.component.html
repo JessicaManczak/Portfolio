@@ -1,0 +1,39 @@
+@for(item of singleProject; track item.img){ @if(isOdd(item.img)){
+<div class="single-project-section reverse">
+  <div>
+    <img [src]="item.img" alt="Projektanzeige" />
+  </div>
+  <div class="single-project-info">
+    <h2>{{ item.h2 }}</h2>
+    <h3>{{ item.h3 }}</h3>
+    <p [innerHTML]="item.p"></p>
+    <div class="portfolio-buttons">
+      <a [href]="item.liveLink" target="_blank" rel="noopener noreferrer"
+        ><button class="button-live-test" mat-button>Live test</button></a
+      >
+      <a [href]="item.gitLink" target="_blank" rel="noopener noreferrer"
+        ><button class="button-github" mat-stroked-button>Github</button></a
+      >
+    </div>
+  </div>
+</div>
+} @else{
+<div class="single-project-section">
+  <div>
+    <img [src]="item.img" alt="Projektanzeige" />
+  </div>
+  <div class="single-project-info">
+    <h2>{{ item.h2 }}</h2>
+    <h3>{{ item.h3 }}</h3>
+    <p [innerHTML]="item.p"></p>
+    <div class="portfolio-buttons">
+      <a [href]="item.liveLink" target="_blank" rel="noopener noreferrer"
+        ><button class="button-live-test" mat-button>Live test</button></a
+      >
+      <a [href]="item.gitLink" target="_blank" rel="noopener noreferrer">
+        <button class="button-github" mat-stroked-button>Github</button>
+      </a>
+    </div>
+  </div>
+</div>
+} }

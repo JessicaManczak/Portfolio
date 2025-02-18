@@ -1,0 +1,109 @@
+.single-project-section {
+    height: auto;
+    width: 1168px;
+    padding-top: 60px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+
+    img {
+        width: 38rem;
+        height: 21rem;
+    }
+
+    .single-project-info {
+        display: flex;
+        gap: 22px;
+        flex-direction: column;
+    }
+
+        h2 {
+            color: #9747FF;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38.4px;
+            margin: 0;
+        }
+    
+        h3 { 
+            color: #70E61C;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 27.6px;
+            margin: 0;
+        }
+    
+        p { 
+            color: white;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19.2px;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-buttons {
+            display: flex;
+            flex-direction: row;
+            width: 375px;
+            height: 65px;
+            gap: 86px;
+        
+            button {
+                font-family: 'Poppins', "Helvetica Neue", sans-serif !important;
+                height: 58px;
+                border-radius: 10px;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 27.6px;
+                color: white;
+                padding-top: 15px;
+                padding-right: 30px;
+                padding-bottom: 15px;
+                padding-left: 30px;
+        
+                &:hover {
+                    background-color: #70E61C !important;
+                    cursor: pointer;
+                }
+            }
+        
+            .button-live-test {
+                width: 152px;
+                background-color: #9747FF;
+                border: #9747FF 1px solid !important;
+
+                &:hover { 
+                    border: #70E61C 1px solid !important;
+                }
+            }
+        
+            .button-github {
+                background-color: #141D2F;
+                width: 137px;
+                border: #70E61C 1px solid !important;
+            }
+        }
+        
+        
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    
+        .single-project-info {
+            align-items: flex-end; // Inhalte nach rechts ausrichten
+        }
+    
+        .portfolio-buttons {
+            justify-content: flex-end; // Buttons nach rechts schieben
+        }
+
+        p { 
+            text-align: right;
+        }
+    }
+
+    
+
+    

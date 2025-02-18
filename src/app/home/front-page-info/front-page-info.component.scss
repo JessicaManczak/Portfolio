@@ -1,0 +1,74 @@
+.front-page-info-section {
+    width: min(45vw, 750px); 
+    height: min(1vh, 172px); 
+}
+
+.front-page-info {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    /* flex-wrap: wrap; */
+    gap: 20px; // Etwas Abstand zwischen den Elementen, um Überlappungen zu vermeiden
+
+    .info-rotate  {
+        font-weight: 400;
+        transform: rotate(270deg);
+        /* font-size: 64px;
+        width: 152px;
+        height: 63px; */
+        font-size: clamp(32px, 4vw, 64px); // Dynamisch skalieren
+        width: clamp(80px, 10vw, 152px);
+        height: auto; // Fix für Überlappungen
+        white-space: nowrap; // Verhindert Umbrüche
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        .info-name {
+            font-weight: 700;
+            /* font-weight: bold;
+            font-size: 66px;
+            line-height: 108px; */
+            font-size: clamp(36px, 6vw, 66px);
+            line-height: 1.2;
+        }
+
+        .info-job {
+            color: #9747ff;
+            font-weight: 400;
+            /* font-size: 54px;
+            line-height: 70px; */
+            font-size: clamp(28px, 5vw, 54px);
+            line-height: 1.2;
+        }
+    }
+}
+
+/* @media (max-width: 500px) {
+    .front-page-info {
+        flex-direction: column; // Falls nötig, übereinander anordnen
+        align-items: center;
+        text-align: center;
+
+        .info-rotate {
+            transform: none; // Rotation auf kleinen Bildschirmen entfernen
+            font-size: 24px;
+            width: auto;
+            height: auto;
+        }
+
+        .info {
+            .info-name {
+                font-size: 32px;
+            }
+
+            .info-job {
+                font-size: 24px;
+            }
+        }
+    }
+} */

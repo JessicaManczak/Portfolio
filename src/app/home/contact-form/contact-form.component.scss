@@ -1,0 +1,202 @@
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: 35px 10vw 109px 10vw;
+}
+
+.contact-info {
+    width: 474px;
+    height: 154px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #141D2F;
+
+    h2 {
+        margin: 0;
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+
+    p, span {
+        margin: 0;
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+
+    span {
+        margin: 0 !important;
+    }
+}
+
+
+
+/*    input, textarea {
+        background-color: #141D2F;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+        width: 590px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #9747FF;
+
+        &:hover {
+            border: 1px solid #70E61C;
+            cursor: pointer;
+        }    
+    }
+
+    & ::placeholder{
+        color: white;
+        font-family: 'Poppins', "Helvetica Neue", sans-serif !important; 
+        padding-left: 10px;
+    }
+
+    textarea { 
+        font-family: 'Poppins', "Helvetica Neue", sans-serif !important; 
+        height: 202px;
+        padding: 15px 1px 15px 1px;
+        resize: none;
+    }
+
+    .checkbox-div { 
+        gap: 34px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .check {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+    }
+    
+        .check input[type="checkbox"] {
+        appearance: none; 
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        border: 2px solid #70E61C; 
+        border-radius: 4px;
+        background-color: #141D2F;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .check input[type="checkbox"]:checked::after {
+        content: "✔"; 
+        font-size: 14px;
+        color: #70E61C;
+        font-weight: bold;
+        position: absolute;
+    } */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    gap: 32px;
+
+    input[type=text], [type=email], select, textarea  {
+        background-color: #141D2F;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+        width: 590px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #9747FF;
+
+        &:hover {
+            border: 1px solid #70E61C;
+            cursor: pointer;
+        }
+    }
+
+    textarea { 
+        font-family: 'Poppins', "Helvetica Neue", sans-serif !important; 
+        height: 202px;
+        padding: 15px 1px 15px 1px;
+        resize: none;
+    }   
+        
+    input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+}
+
+    
+      
+      
+
+    button { 
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 23px;
+        background-color: #70E61C;
+        border: #70E61C;;
+        color: white;
+        width: 253px;
+        height: 58px;
+        border-radius: 10px;
+        padding: 15px 30px 15px 30px;
+        gap: 10px;
+    }    
+
+    label a {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+    
+    label a:visited,
+    label a:active,
+    label a:focus {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+
+    /* } */
+
+.scroll-up-div {
+    align-self: flex-end; 
+    margin-top: auto;   
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 34px; 
+
+    img {
+        cursor: pointer;
+        width: 39px;
+        height: 39px;
+        border-radius: 41px;
+        border: 2px;
+    }
+
+    }      

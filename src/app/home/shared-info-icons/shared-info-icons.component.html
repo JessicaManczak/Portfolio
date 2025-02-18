@@ -1,0 +1,10 @@
+<div>
+  <a
+    *ngFor="let item of socialMediaLinks"
+    [href]="item.link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img class="hover" [src]="item.img" alt="Social Media Icon" />
+  </a>
+</div>

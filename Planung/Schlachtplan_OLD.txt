@@ -1,0 +1,141 @@
+Design 2 gepaart mit bearbeiteten Bilder zu Projekten?
+--> Wo sind die neuen Designs ? 
+
+-Components 
+--> SHARED: Header / Footer
+
+--HEADER
+--> Icon mit Name 
+--> Headline Eng/Deu / About me / Skills / Projects 
+
+--> Main Name / Frontend Developer / Buttons Check my Work / Contact me 
+--> Bauchbinde animiert Based in / Available for remote work / Open to work / Frontend Developer
+--> mini Menuleiste rechts mit LinkedIN / Git / Email
+--> mini Pfeilleiste links
+
+--> Bild Component schwarz / weiß
+--> About me / Who am I Component
+
+--> Technologies / Skill Set links mit Button Lets Talk
+--> Skill Icons rechts
+
+--> Featured Projects mit h2 Text
+--> 3X Projekt Component
+--> 3X Animation Appear mit Project Picture (BEARBEITETES?)
+--> 3X bei Click neue Component links Beschreibung / GitHub / LiveTest Button / großes Projektbild rechts / Button für nächstes Projekt / close Button 
+
+
+--> What my colleagues say about me mit klickbarer Slider
+--> Ausschnitt / Cube mit Kollegen Aussage über mich 
+
+--> Contact me links mit p Element
+--> Contact Form rechts mit Submit Button und privacy policy klickbar REQUIRED BEACHTEN
+
+
+--FOOTER 
+--> Icon mit Name
+--> Copyright 
+--> Links Github / LinkedIn / Email / Legal Notice
+
+--> Legal Notice 
+--> Fenster nach erfolgreicher EmailVerschickung   
+
+________________________________________________________________________________________
+
+
+--> Deutsch / Englisch auswählbar 
+
+________________________________________________________________________________________
+
+
+-Animations
+-- HEADER 
+--> Hover / Dots unter Kategorie-Auswahl Header 
+--> Namen Transition bei Hover Header 
+
+--> Button Text slide nach links und dann von rechts im Loop wieder rein 
+--> Pfeil blinkt nach unten mini Pfeilleiste links
+--> Bauchbinde bewegt sich von rechts nach links 
+--> Hover / Auswahldots in mini Leiste rechts
+
+--> minimale Hover Effekte in About me 
+
+--> Lets Talk Button Text slide nach links und dann von rechts im Loop wieder rein 
+--> minimaler Hover auf den Icons 
+--> Growth Mindset Icon andere Farbe, bei Hover mini Fenster mit neuen Icons was ich noch lernen mag 
+
+-->3X Hover plus rechts neues Fenster erscheint mit ProjektbildVorschau 
+-->3X bei Click im neuen Fenster Buttons mini Hover / X-Close mini Hover / Next Project mini Hover
+
+--> What my Colleagues say about me Slider mini Hover und anklickbar 
+
+--> ContactForm rechts mini Hover 
+--> Privacy Policy mini Hover , klickbar / Submit Button Text slide nach links / von rechts Loop slide
+
+--FOOTER 
+--> Namen Transition bei Hover Header
+--> Links mini Hover / Auswahldot der Links 
+
+__________________________________________________________________________________________
+
+-Funktionalität
+--HEADER 
+--> Deutsch / Englisch Switch + Übersetzung des Portfolios
+--> About me / Skills / Projects klickbar und Slider führt zur richtigen Stelle
+
+--ABOUT ME
+--> Check my Work Button klickbar / führt zu Projekten 
+--> Contact me Button klickbar / führt zur ContactForm 
+--> LinkedIn & GitHub Buttons klickbar / neues Fenster mit Seiten öffnet sich
+
+--TECHNOLOGIES / SKILL SET
+--> Lets talk Button klickbar / führt zur ContactForm
+
+--FEATURED PROJECTS 
+-->3X klickbar neues Fenster öffnet sich
+-->3X im neuen Fenster: Git Button klickbar / neues Fenster mit Git öffnet sich
+-->3X X Close Button schließt neues Fenster Overlay
+-->3X Next Project Button klickbar / Slided zu anderen Projekt und Loopt 
+-->3X Live Test klickbar / öffnet neues Fenster mit Projekt zum testen
+ 
+--WHAT MY COLLEAGUES SAY ABOUT ME
+--> Slider klickbar / Comments zu beiden Seiten slidebar
+
+--CONTACT ME
+--> ValidationForm funktionsfähig
+--> Name / Email / Message REQUIRED eintragbar 
+--> ohne Haken bei privacy Policy keine Mail verschicken möglich
+--> Submit Button klickbar , send Mail / neues Fenster mit Bestätigung Overlay, damit keine Mails gespammt werden können
+
+--FOOTER 
+--> Icon mit Name klickbar / führt zum Anfang zurück / Slide Smooth
+--> GitHub / LinkedIn klickbar / neues Fenster öffnet sich
+--> Email klickbar / führt zur Contact Me Sektion
+--> Legal Notice klickbar / neues Fenster mit Legal Notice
+
+______________________________________________________________________________________
+
+-Projekte FÜR Portfolio 
+--> keine Console.logs
+--> keine Fehler in der Konsole
+--> Responsiveness bis 320px / max px Anzahl
+--> keine Soundbugs / Designbugs / Smooth Animations / Hover / Cursor 
+--> geringe Ladezeiten 
+
+______________________________________________________________________________________
+
+-Portfolio 
+--> Domain einrichten / NameCheap? 
+--> Firebase einrichten
+--> Selfie machen
+--> Designen
+--> Hintergründe entfernen
+--> Projekte Bildvorschau bearbeiten
+--> Responsiveness min 320px / max px
+--> Mobile Ansicht Screen drehen
+--> Bilder / Projekte VORLADEN
+
+
+ 
+
+ 

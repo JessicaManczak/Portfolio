@@ -1,0 +1,34 @@
+.contact {
+    display: flex;
+    align-items: center;
+    padding-top: 109px;
+    gap: 32px;
+    background-color: #141D2F;
+
+    h1 {
+        color: white;
+        margin: 0;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 108px;
+        text-align: center;
+    }
+}
+
+.contact-background-green {
+    float: right;
+    margin-top: -150vh;
+
+}
+
+.contact-background-purple {
+    display: flex;
+    padding-top: 109px;    
+    float: left;
+    margin-top: -56vh;
+
+    img {
+    height: 45vh;
+    width: 40vw;
+    }
+}

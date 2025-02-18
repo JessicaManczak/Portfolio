@@ -1,0 +1,13 @@
+<div class="about-me">
+  <h1>About me</h1>
+  <p>
+    Hi, I'm a german speaking Frontend Developer based near<br />
+    Aachen. Motivated by the limitless opportunities within IT, I<br />
+    am excited about crafting visually captovating and<br />
+    intuitive websites and applications.
+  </p>
+  <div class="about-me-features" *ngFor="let item of aboutMeFeatures">
+    <img [src]="item.img" alt="About Me Icon" />
+    <p [innerHTML]="item.info"></p>
+  </div>
+</div>

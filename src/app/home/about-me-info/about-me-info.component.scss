@@ -1,0 +1,43 @@
+.about-me {
+    background-color: #131D2F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    
+
+    h1 {
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 108px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+        margin: 0;
+    }
+
+    .about-me-features {
+        display: flex
+        ;
+            align-items: center;
+            gap: 25px;
+    }
+
+    img {
+        width: 44px;
+        height: 44px;
+    
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    }
+
+
+}

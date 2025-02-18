@@ -1,0 +1,24 @@
+
+
+div {
+    width: min(40vw, 646px); /* Skaliert mit der Breite, bleibt aber max. 646px */
+    height: min(50vh, 705px); /* Skaliert mit der Höhe, bleibt aber max. 705px */
+    background-color: #141D2F;
+    display: grid;
+    place-items: center;
+
+    img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .profile-img { 
+        z-index: 100;
+    }
+
+    .background-img {
+        width: 700px;
+        height: 800px;
+        z-index: 0;
+    }
+}

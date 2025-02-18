@@ -1,0 +1,31 @@
+div {
+    background-color: #141D2F;
+    border: 2px solid #70E61C;
+    border-radius: 10px;
+    color: white;
+    width: 25rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+
+    background-image: url("/assets/img/mail_background.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; 
+}
+
+p, span {
+    position: relative; 
+    z-index: 1;
+}

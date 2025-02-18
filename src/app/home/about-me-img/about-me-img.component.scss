@@ -1,0 +1,22 @@
+.about-me-img-div {
+    display: flex;
+    align-items: center;
+
+    .about-me-img {
+        width: 28rem;
+        height: 28rem;
+        border: 5px solid #70E61C;
+        border-radius: 50%;
+        background-color: #141D30;
+
+        img {   
+            width: 350px;
+            left: 50px;
+        }
+    }
+
+    .green-deko-line {
+        display: flex;
+        
+    }
+}

@@ -1,0 +1,67 @@
+.container {
+  position: absolute; /* Absolut positioniert relativ zum Container */
+  top: -190px;
+  left: 0;
+  z-index: 10; /* Um sicherzustellen, dass es über den anderen Elementen erscheint */
+  }
+  
+  .speech-bubble {
+    display: flex;
+    gap: 20px;
+    flex-direction: column !important;
+    background-color: white;  /* Hintergrundfarbe der Blase */
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;  /* Maximale Breite */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    position: relative;
+    
+    
+    /* Die Spitze der Sprechblase */
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -10px;  /* Position der Spitze unter dem Div */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid white; /* Farbe der Spitze */
+    }
+
+    .continually-learning {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    p { 
+      margin: 0;
+    }
+
+    span {
+      font-size: 13px;
+    }
+    
+    .react, .vue-js   {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+   }
+
+   .learning-img {
+    width: 35px;
+  }
+
+  }
+  
+  img {
+    max-width: 100%;  /* Bildgröße anpassen */
+    margin-top: -10px; /* Bild ragt leicht in die Sprechblase */
+  }
+
+  

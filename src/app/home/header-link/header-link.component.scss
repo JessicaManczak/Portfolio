@@ -1,0 +1,53 @@
+.header-link {
+    min-width: 114px;
+    height: 32px;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27.6px;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #70E61C;
+    }
+}
+
+/* .active-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; // Abstand zur Schrift
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px; // Breite der Linie
+    height: 2px; // Dicke der Linie
+    background-color: #70E61C;
+    transition: all 0.3s ease-in-out;
+}
+ */
+.d-none-desktop {
+    display: none;
+}
+
+@media (max-width: 900px) { 
+
+}
+
+
+@media (max-width: 768px) { 
+    .header-link {
+        height: 100px !important;
+        justify-content: flex-start;
+    }
+
+    .d-none-desktop {
+        display: flex;
+    }
+}  
+
+
+

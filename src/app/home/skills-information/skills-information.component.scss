@@ -1,0 +1,47 @@
+.skill-information {
+    background-color: #141D2F;
+    text-align: right;
+    color: white;
+    width: 571px;
+    height: 404px;
+        
+    p {
+        margin: 0;
+    }
+
+    .skill-top-information {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 32px;
+        margin-bottom: 32px;
+        
+        h1 {
+            margin: 0;
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 108px;
+        }
+    }
+
+    .skill-main-information {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.2px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-right: 100px;
+        
+        h2 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38.4px;
+            margin: 0;
+
+            span {
+                color: #9747FF;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<div class="skill-icon-div">
+  <div class="skill-icon" *ngFor="let item of skillIcons">
+    <img [src]="item.img" [alt]="item.description + ' Icon'" />
+    <span>{{ item.description }}</span>
+  </div>
+
+  <div
+    class="continually-learning-icon"
+    (mouseenter)="showSkillBubble = true"
+    (mouseleave)="showSkillBubble = false"
+  >
+    @if(showSkillBubble){
+    <app-skill-bubble></app-skill-bubble>
+    } @else {
+    <img
+      class="continually-learning"
+      src="assets/img/continuallylearning.png"
+      alt="Continually Learning Icon"
+    />
+    }
+  </div>
+</div>
+
+<!-- <div
+  class="continually-learning-icon"
+  (mouseenter)="showSkillBubble = true"
+  (mouseleave)="showSkillBubble = false"
+>
+  <ng-container *ngIf="showSkillBubble; else showImage">
+    <app-skill-bubble></app-skill-bubble>
+  </ng-container>
+
+  <ng-template #showImage>
+    <img
+      class="continually-learning"
+      src="assets/img/continuallylearning.png"
+      alt="Continually Learning Icon"
+    />
+  </ng-template>
+</div> -->
