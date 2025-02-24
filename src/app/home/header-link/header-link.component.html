@@ -1,14 +1,3 @@
 <div [class]="item.class" class="header-link" *ngFor="let item of headerLinks">
-  <a (click)="scrollToSection(item.link)">{{ item.name }}</a>
+  <a (click)="scrollToSection(item.link)">{{ item.name | translate }}</a>
 </div>
-
-<!-- 
-<div
-  [class]="item.class"
-  class="header-link"
-  *ngFor="let item of headerLinks"
-  [ngClass]="{ 'active-link': selectedLink === item.link }"
->
-  <a (click)="scrollToSection(item.link)">{{ item.name }}</a>
-</div>
- -->

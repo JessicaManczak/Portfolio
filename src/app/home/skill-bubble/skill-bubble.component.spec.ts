@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { SkillBubbleComponent } from './skill-bubble.component';
 
 describe('SkillBubbleComponent', () => {

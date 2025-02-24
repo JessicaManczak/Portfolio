@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { SharedInfoIconsComponent } from '../shared-info-icons/shared-info-icons.component';
 
-
 @Component({
   selector: 'app-front-page-footer',
   imports: [SharedInfoIconsComponent],
@@ -10,5 +9,4 @@ import { SharedInfoIconsComponent } from '../shared-info-icons/shared-info-icons
 })
 export class FrontPageFooterComponent {
 
-  
 }

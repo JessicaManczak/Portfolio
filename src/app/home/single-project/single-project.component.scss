@@ -3,19 +3,18 @@
     width: 1168px;
     padding-top: 60px;
     display: flex;
-    gap: 35px;
     align-items: center;
 
-    img {
-        width: 38rem;
-        height: 21rem;
-    }
+        img {
+            width: 38rem;
+            height: 21rem;
+        }
 
-    .single-project-info {
-        display: flex;
-        gap: 22px;
-        flex-direction: column;
-    }
+        .single-project-info {
+            display: flex;
+            gap: 22px;
+            flex-direction: column;
+        }
 
         h2 {
             color: #9747FF;
@@ -62,10 +61,10 @@
                 padding-bottom: 15px;
                 padding-left: 30px;
         
-                &:hover {
-                    background-color: #70E61C !important;
-                    cursor: pointer;
-                }
+                    &:hover {
+                        background-color: #70E61C !important;
+                        cursor: pointer;
+                    }
             }
         
             .button-live-test {
@@ -73,9 +72,9 @@
                 background-color: #9747FF;
                 border: #9747FF 1px solid !important;
 
-                &:hover { 
-                    border: #70E61C 1px solid !important;
-                }
+                    &:hover { 
+                        border: #70E61C 1px solid !important;
+                    }
             }
         
             .button-github {
@@ -83,20 +82,18 @@
                 width: 137px;
                 border: #70E61C 1px solid !important;
             }
-        }
-        
-        
+        }        
     }
 
     .reverse {
         flex-direction: row-reverse;
     
         .single-project-info {
-            align-items: flex-end; // Inhalte nach rechts ausrichten
+            align-items: flex-end; 
         }
     
         .portfolio-buttons {
-            justify-content: flex-end; // Buttons nach rechts schieben
+            justify-content: flex-end;
         }
 
         p { 
@@ -104,6 +101,62 @@
         }
     }
 
-    
+    @media (max-width: 1024px) {
 
-    
+    }
+
+
+    @media (max-width: 768px) {
+        .single-project-section {
+            flex-direction: column;
+            text-align: center;
+            }
+
+        .single-project-info {
+            align-items: center;
+        }
+
+        .reverse {
+            flex-direction: column;
+        
+        .single-project-info {
+            align-items: center; 
+        }
+
+        p { 
+            text-align: center;
+        }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .single-project-section {
+
+            img { 
+                width: 35rem;
+                height: 18rem;
+            }
+        }
+    }
+
+    @media (max-width: 430px) {
+        h3 { 
+            font-size: 18px !important;
+        }
+
+        p { 
+            font-size: 14px !important;
+        }
+
+        .portfolio-buttons {
+            gap: 15px !important;
+            justify-content: center
+        }
+        
+        .reverse {
+            .portfolio-buttons {
+                gap: 15px !important;
+                justify-content: center
+            }
+        }
+    }

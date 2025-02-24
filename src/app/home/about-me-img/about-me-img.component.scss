@@ -1,6 +1,7 @@
 .about-me-img-div {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     .about-me-img {
         width: 28rem;
@@ -9,9 +10,17 @@
         border-radius: 50%;
         background-color: #141D30;
 
+
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        overflow: hidden;
+
         img {   
-            width: 350px;
-            left: 50px;
+            width: 44vh;
+            position: relative;
+            top: 8vh;
+            left: -3vw;
         }
     }
 

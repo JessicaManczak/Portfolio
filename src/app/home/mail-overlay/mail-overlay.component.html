@@ -1,8 +1,4 @@
-<div>
-  <p>
-    Ihre E-Mail wurde erfolgreich versendet.<br /><br />
-    Ich werde Ihnen schnellstmöglich antworten.<br /><br />
-    Vielen Dank!<br /><br /><br />
-  </p>
-  <span>Dieses Fenster schließt automatisch.</span>
+<div class="mail-overlay">
+  <p [innerHTML]="'MAIL_OVERLAY.SUCCESS_MESSAGE' | translate"></p>
+  <span [innerHTML]="'MAIL_OVERLAY.CLOSING_MESSAGE' | translate"></span>
 </div>

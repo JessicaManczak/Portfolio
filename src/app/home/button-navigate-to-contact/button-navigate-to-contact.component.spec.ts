@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ButtonNavigateToContactComponent } from './button-navigate-to-contact.component';
 
 describe('ButtonNavigateToContactComponent', () => {

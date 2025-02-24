@@ -3,7 +3,6 @@
     align-items: center;
     padding-top: 109px;
     gap: 32px;
-    background-color: #141D2F;
 
     h1 {
         color: white;
@@ -18,7 +17,7 @@
 .contact-background-green {
     float: right;
     margin-top: -150vh;
-
+    pointer-events: none;
 }
 
 .contact-background-purple {
@@ -32,3 +31,30 @@
     width: 40vw;
     }
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 75px !important;
+    }
+
+    .contact {
+        gap: 0;
+        position: relative;
+        left: -29rem;
+        
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 60px !important;
+    }
+}
+
+
+@media (max-width: 430px) {
+    h1 {
+        font-size: 48px !important;
+    }
+}
+

@@ -1,0 +1,38 @@
+To Do 
+
+Funktionalität 
+- Alle Features kontrollieren
+- Chrome, FireFox, Safari, Edge
+- LIVE Links 
+- Proejekte hochladen 
+
+
+Code 
+- bekannter Fehler / console.logs raus X
+- 400 Code X
+
+- Funktion max 14 Zeilen  X
+- JsDoku ?X
+- Ordnerstruktur 🥰 X
+
+ 
+Sonstiges 
+- Responsive (min 320px) X
+- Porjekte testen 
+- Animations beim laden einbauen? 
+
+
+Responsive 
+@media (max-width: 1920px) {}
+@media (max-width: 1440px) {}
+@media (max-width: 1024px) {}
+@media (max-width: 768px)
+@media (max-width: 576px) 
+@media (max-width: 430px)
+
+- checkbox 
+- form Abstand bei 1024 +
+
+- Hamburger Menu an Header und scrollt nicht nach oben X
+- Email send User Feedback  X 
+- contact form code bereinigenX

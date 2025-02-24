@@ -2,10 +2,9 @@ span {
     display: flex;
     align-items: center;
     color: white;
-    /* height: 160px; */
-    /* gap: 3px; */
     font-weight: 400;
     font-size: 22px;
-    /* line-height: 27.6px; */
-        transform: rotate(90deg); 
+    transform: rotate(90deg); 
+    position: relative;
+    top: -180px;
     }

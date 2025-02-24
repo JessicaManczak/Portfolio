@@ -12,12 +12,9 @@ button {
     font-size: 23px;
     line-height: 27.6px;
     
-    
-    &:hover {
-        transform: scale(1.1);
-        padding-top: 20px 40px;
-        background-color: #9747FF;
-        
+        &:hover {
+            transform: scale(1.1);
+            padding-top: 20px 40px;
+            background-color: #9747FF;
     }
-    
 }

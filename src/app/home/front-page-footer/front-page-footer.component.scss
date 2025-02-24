@@ -22,14 +22,13 @@ div {
 @media (max-width: 768px) {
     div {
         gap: 28px;
-     }
+    }
 
     span {
-        font-size: 21px !important;
+        display: none;
     }
 }
 
-//FEHLENDE MEDIA QUERYS
 @media (max-width: 430px) {
     .d-none-mobile {
         display: none;

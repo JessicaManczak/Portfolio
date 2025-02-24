@@ -3,18 +3,30 @@
     >Jess<span class="colored-i"><span>i</span></span
     >c<span style="color: #70e61c">a</span></a
   >
-  <div class="header-links d-none-mobile">
-    <app-header-link></app-header-link>
-  </div>
 
-  <div class="header-nav d-none-desktop">
-    <img
-      id="burgerMenuImg"
-      class="header-burger"
-      src="assets/img/burger-bar.png"
-      (click)="toggleMenu()"
-      alt="BurgerMenu"
-    />
+  <div class="header-structure">
+    <div class="header-links d-none-mobile">
+      <app-header-link></app-header-link>
+    </div>
+    <div class="translate-div">
+      <mat-button-toggle-group
+        [(value)]="translate.currentLang"
+        (change)="selectLanguage($event.value)"
+      >
+        <mat-button-toggle value="en">Eng</mat-button-toggle>
+        <mat-button-toggle value="de">Ger</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+
+    <div class="header-nav d-none-desktop">
+      <img
+        id="burgerMenuImg"
+        class="header-burger"
+        src="assets/img/burger-bar.png"
+        (click)="toggleMenu()"
+        alt="BurgerMenu"
+      />
+    </div>
   </div>
 </div>
 <div

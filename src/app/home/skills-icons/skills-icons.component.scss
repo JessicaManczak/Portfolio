@@ -1,55 +1,42 @@
-    
-    .skill-icon-div {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        width: 664px;
-        column-gap: 88px;
-        row-gap: 24px;
-
-
-        position: relative;
+.skill-icon-div {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 664px;
+    column-gap: 88px;
+    row-gap: 24px;
+    position: relative;
     }
 
-        .skill-icon {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        width: 88px;
-        height: 101px;
-        padding-top: 12px;
-        gap: 10px;
-
-        position: relative;
+.skill-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 88px;
+    height: 101px;
+    padding-top: 12px;
+    gap: 10px;
+    position: relative;
     }
 
     .skill-icon:hover .continually-learning {
-        display: none; /* Versteckt das ursprüngliche Bild, wenn das Hover-Bild angezeigt wird */
-      }
-      
-
-        img { 
-            height: 60px;
-            width: 53px;
-            animation: none;
+        display: none;
+    }
+    
+    img { 
+        height: 60px;
+        width: 53px;
+        animation: none;
         }
 
-        img:hover {
-            animation: jump-fall 1s ease-in-out;  
+    img:hover {
+        animation: jump-fall 1s ease-in-out;  
         }
     
-    .continually-learning-icon {
-        display: flex;
-        align-items: center;
-
-
-        position: relative;
-    }
-
     .continually-learning {
-        width: 88px !important;
-        height: 119px !important;
+        width: 95px !important;
+        height: 120px !important;
         animation: none !important;
     }
 

@@ -6,14 +6,19 @@
         >c<span style="color: #70e61c">a</span></a
       >
     </h1>
-
     <p class="d-none-mobile">
-      <a [routerLink]="'/legal-notice'"><span>Legal N</span>otice</a>
+      <a [routerLink]="'/legal-notice'">
+        <span>{{ "FOOTER.LEGAL_NOTICE_1" | translate }}</span
+        >{{ "FOOTER.LEGAL_NOTICE_2" | translate }}
+      </a>
     </p>
   </div>
   <div class="name-date">&#169; Jessica Manczak 2025</div>
   <app-shared-info-icons></app-shared-info-icons>
   <p class="d-none-desktop">
-    <a [routerLink]="'/legal-notice'"><span>Legal N</span>otice</a>
+    <a [routerLink]="'/legal-notice'">
+      <span>{{ "FOOTER.LEGAL_NOTICE_1" | translate }}</span
+      >{{ "FOOTER.LEGAL_NOTICE_2" | translate }}
+    </a>
   </p>
 </footer>

@@ -1,33 +1,21 @@
 <div id="legalNotice" class="legal-notice">
   <div>
-    <h1>Legal Notice</h1>
+    <h1>{{ "LEGAL_NOTICE.TITLE" | translate }}</h1>
     <a><img (click)="goBack()" src="assets/img/return.png" alt="Go back" /></a>
   </div>
 
-  <h2>Information pursuant to § 5 TMG</h2>
+  <h2>{{ "LEGAL_NOTICE.INFO" | translate }}</h2>
   <p>
     Jessica Manczak<br />
     Rathausstraße 94<br />
     52477 Alsdorf<br /><br />
     jessicamanczak&#64;gmx.de
   </p>
-  <h2>Disclaimer</h2>
-  <h3>Liability for Content</h3>
-  <p>
-    The content of this website has been created with the utmost care. However,
-    I cannot guarantee the<br />
-    accuracy, completeness, or timeliness of the content.
-  </p>
-  <h2>Liability for Links</h2>
-  <p>
-    My portfolio may contain links to external third-party websites. I have no
-    control over the content of<br />
-    these websites and therefore cannot assume any Liability for them.
-  </p>
-  <h2>Copyright</h2>
-  <p>
-    The content and works created by me in this website are subject to copyright
-    law. Any repdouction,<br />
-    editing, or distribution required my explicit permission.
-  </p>
+  <h2>{{ "LEGAL_NOTICE.DISCLAIMER" | translate }}</h2>
+  <h3>{{ "LEGAL_NOTICE.CONTENT_LIABILITY" | translate }}</h3>
+  <p [innerHTML]="'LEGAL_NOTICE.CONTENT_INFO' | translate"></p>
+  <h2>{{ "LEGAL_NOTICE.LINKS_LIABILITY" | translate }}</h2>
+  <p [innerHTML]="'LEGAL_NOTICE.LINKS_INFO' | translate"></p>
+  <h2>{{ "LEGAL_NOTICE.COPYRIGHT" | translate }}</h2>
+  <p [innerHTML]="'LEGAL_NOTICE.COPYRIGHT_INFO' | translate"></p>
 </div>

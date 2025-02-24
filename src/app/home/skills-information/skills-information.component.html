@@ -1,21 +1,22 @@
 <div class="skill-information">
   <div class="skill-top-information">
-    <h1>My skills</h1>
+    <h1>{{ "SKILLS_INFORMATION.TITLE" | translate }}</h1>
     <img src="assets/img/purple_line.png" alt="Deko Linie" />
   </div>
 
   <div class="skill-main-information">
     <p>
-      I have gained experience in building projects with different<br />
-      frontend technologies and concepts.
+      {{ "SKILLS_INFORMATION.EXPERIENCE" | translate }}
     </p>
-    <h2>Looking for <span>another skill</span>?</h2>
+    <h2>
+      {{ "SKILLS_INFORMATION.LOOKING" | translate }}
+      <span> {{ "SKILLS_INFORMATION.ANOTHER_SKILL" | translate }}</span>
+    </h2>
     <p>
-      Feel free to contact me. I look forward to expanding<br />
-      on my previous knowledge.
+      {{ "SKILLS_INFORMATION.MESSAGE" | translate }}
     </p>
     <app-button-navigate-to-contact
-      [buttonText]="'Get in touch'"
+      [buttonText]="'CONTACT_BUTTONS.SKILLS_TALK' | translate"
     ></app-button-navigate-to-contact>
   </div>
 </div>

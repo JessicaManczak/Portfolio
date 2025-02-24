@@ -9,6 +9,5 @@ import { AboutMeImgComponent } from '../about-me-img/about-me-img.component';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
-  
 
 }

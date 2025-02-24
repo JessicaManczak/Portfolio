@@ -1,4 +1,4 @@
-div {
+.mail-overlay {
     background-color: #141D2F;
     border: 2px solid #70E61C;
     border-radius: 10px;
@@ -8,6 +8,7 @@ div {
     display: flex;
     flex-direction: column;
     text-align: center;
+    z-index: 1;
 
     position: fixed; 
     top: 50%;

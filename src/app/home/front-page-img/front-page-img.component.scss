@@ -1,8 +1,6 @@
-
-
 div {
-    width: min(40vw, 646px); /* Skaliert mit der Breite, bleibt aber max. 646px */
-    height: min(50vh, 705px); /* Skaliert mit der Höhe, bleibt aber max. 705px */
+    width: min(40vw, 646px); 
+    height: min(50vh, 705px); 
     background-color: #141D2F;
     display: grid;
     place-items: center;
@@ -13,12 +11,38 @@ div {
     }
 
     .profile-img { 
-        z-index: 100;
+        height: 100vh;
+        position: relative;
+        top: -80px;
+        z-index: 1;
     }
-
+    
     .background-img {
-        width: 700px;
-        height: 800px;
+        width: min(50vw, 600px); 
+        height: min(80vh, 650px);
+        position: relative;
         z-index: 0;
+        top: -10vh;
+        left: -2vw;
     }
+}
+
+@media (max-width: 1024px) {
+    .profile-img {
+        height: 80vh !important;
+        top: 25px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-img {
+        height: 80vh !important;
+        top: 35px !important;
+    }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 430px) {
+
 }

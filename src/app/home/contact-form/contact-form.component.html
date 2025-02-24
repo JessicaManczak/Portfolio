@@ -1,69 +1,10 @@
 <div class="contact-section">
   <div class="contact-info">
-    <h2>Got a problem to solve?</h2>
-    <p>
-      Contact me through this form, I am interested in hearing<br />
-      from you, knowing your ideas and contributing to your<br />
-      projects with my work.
-    </p>
-    <span>Need a Frontend developer? <b>Contact me!</b></span>
+    <h2>{{ "CONTACT_FORM.TITLE" | translate }}</h2>
+    <p [innerHTML]="'CONTACT_FORM.DESCRIPTION' | translate"></p>
+    <span [innerHTML]="'CONTACT_FORM.BONUS_INFO' | translate"></span>
   </div>
 
-  <!-- <div class="contact-form">
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <input formControlName="name" placeholder="Your name" required />
-      <div
-        *ngIf="
-          contactForm.get('name')?.invalid && contactForm.get('name')?.touched
-        "
-      >
-        Name must be 2-50 characters long and contain only letters.
-      </div>
-      <input
-        formControlName="email"
-        placeholder="Your email"
-        type="email"
-        required=""
-      />
-      <div
-        *ngIf="
-          contactForm.get('email')?.invalid && contactForm.get('email')?.touched
-        "
-      >
-        Please enter a valid email address.
-      </div>
-      <textarea
-        formControlName="message"
-        placeholder="Your message"
-        rows="5"
-        required
-      ></textarea>
-      <div
-        *ngIf="
-          contactForm.get('message')?.invalid &&
-          contactForm.get('message')?.touched
-        "
-      >
-        Message must be at least 10 characters long.
-      </div>
-      <div class="checkbox-div">
-        <label class="check">
-          <input type="checkbox" formControlName="privacy" required />
-          I've read the
-          <a href="#privacyPolicy"
-            ><span style="color: #9747ff">privacy policy</span></a
-          >
-          and agree to the processing of my data.
-        </label>
-        <div
-          *ngIf="
-            contactForm.get('privacy')?.invalid &&
-            contactForm.get('privacy')?.touched
-          "
-        >
-          You must accept the privacy policy.
-        </div>
- -->
   <div class="container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <input
@@ -72,63 +13,63 @@
         type="text"
         id="name"
         name="name"
-        placeholder="Your name"
+        [placeholder]="'CONTACT_FORM.PLACEHOLDER_NAME' | translate"
         required
       />
-      @if (!name.valid && name.touched) {
-      <p>Please enter your name</p>
-      }
+      <div class="alert-div" [class.show]="!name.valid && name.touched">
+        <p [innerHTML]="'CONTACT_FORM.ALERT_NAME' | translate"></p>
+      </div>
       <input
         #email="ngModel"
         [(ngModel)]="contactData.email"
         type="email"
         id="email"
         name="email"
-        placeholder="Your email"
+        [placeholder]="'CONTACT_FORM.PLACEHOLDER_MAIL' | translate"
         required
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
       />
-      @if (!email.valid && email.touched) {
-      <p>Please enter your email</p>
-      }
+      <div class="alert-div" [class.show]="!email.valid && email.touched">
+        <p [innerHTML]="'CONTACT_FORM.ALERT_MAIL' | translate"></p>
+      </div>
       <textarea
         #message="ngModel"
         minlength="4"
         [(ngModel)]="contactData.message"
         id="message"
         name="message"
-        placeholder="Your message"
+        [placeholder]="'CONTACT_FORM.PLACEHOLDER_MESSAGE' | translate"
         required
       ></textarea>
-      @if (!message.valid && message.touched) {
-      <p>Please enter a message</p>
-      }
-
+      <div class="alert-div" [class.show]="!message.valid && message.touched">
+        <p [innerHTML]="'CONTACT_FORM.ALERT_MESSAGE' | translate"></p>
+      </div>
       <div class="checkbox-div">
         <input
           type="checkbox"
+          class="check"
           #privacy="ngModel"
           [(ngModel)]="contactData.privacy"
-          [ngModelOptions]="{ standalone: true }"
+          name="privacy"
           (click)="togglePrivacy()"
           required
         />
         <p>
-          I've read the
+          {{ "CONTACT_FORM.READ_PRIVACY_POLICY" | translate }}
           <a [routerLink]="'/privacy-policy'" style="color: #9747ff">
-            privacy policy
+            {{ "CONTACT_FORM.PRIVACY_POLICY" | translate }}
           </a>
-          and agree to the processing of my data.
+          {{ "CONTACT_FORM.READ_PRIVACY_POLICY2" | translate }}
         </p>
-        @if (!privacy.valid && privacy.touched) {
-        <p>Please accept the privacy policy.</p>
-        }
       </div>
-      <input
-        [disabled]="contactForm.invalid"
-        type="submit"
-        value="Send message"
-      />
+      <div class="alert-div" [class.show]="!privacy.valid && privacy.touched">
+        <p [innerHTML]="'CONTACT_FORM.ALERT_PRIVACY_POLICY' | translate"></p>
+      </div>
+      <div class="submit-div">
+        <button type="submit" [disabled]="!contactForm.valid">
+          {{ "CONTACT_FORM.BUTTON" | translate }}
+        </button>
+      </div>
     </form>
     <div class="scroll-up-div">
       <div>
@@ -136,11 +77,5 @@
       </div>
     </div>
   </div>
-
-  <!-- Submit-Button (Deaktiviert, falls Checkbox nicht angehakt) -->
-  <!-- <button type="submit" [disabled]="contactForm.invalid">Send message</button> -->
 </div>
-<!--    </form>
-  </div>
-</div>
- -->
+<app-mail-overlay *ngIf="showMailOverlay"></app-mail-overlay>

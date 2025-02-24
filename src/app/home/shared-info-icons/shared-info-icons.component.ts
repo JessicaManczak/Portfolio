@@ -7,10 +7,11 @@ import { CommonModule } from '@angular/common';
   templateUrl: './shared-info-icons.component.html',
   styleUrl: './shared-info-icons.component.scss'
 })
+
 export class SharedInfoIconsComponent {
   socialMediaLinks: {img: string, link: string} [] = [
     { img: 'assets/img/github.png', link: 'https://github.com/JessicaManczak' },
     { img: 'assets/img/mail.png', link: 'mailto:jessicamanczak@gmx.de' },
-    { img: 'assets/img/linkedin.png', link: 'https://www.linkedin.com/in/jessica-manczak-3b9751351/' }
+    { img: 'assets/img/linkedin.png', link: 'https://www.linkedin.com/in/jessica-manczak-b77a09352/' }
   ]
 }

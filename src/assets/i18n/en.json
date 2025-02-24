@@ -1,0 +1,117 @@
+{ 
+  "HEADERLINK": {
+    "ABOUTME": "About me",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact"
+  }, 
+
+  "FRONTPAGE_INFO": {
+    "ROTATE": "I am",
+    "JOB": "FRONTEND DEVELOPER"
+  }, 
+
+  "CONTACT_BUTTONS": {
+    "FRONT_TALK": "Let's talk",
+    "SKILLS_TALK": "Get in touch"
+  },
+
+  "SCROLL_DOWN": {
+    "SCROLL": "Scroll down"
+  }, 
+
+  "ABOUT_ME_INFO": {
+    "ABOUT": "About me",
+    "INTRO": "Hi, I'm a German-speaking Frontend Developer based near Aachen.<br>Motivated by the limitless opportunities within IT,<br>I am excited about crafting visually captivating and<br>intuitive websites and applications."
+  }, 
+
+  "ABOUT_ME_SKILLS": { 
+    "INFO_1": "Flexible in terms of working environments, I can<br>work effectively both on-site Aachen and<br>remotely.",
+    "INFO_2": "I am open-minded and always looking for<br>personal challenges to constantly improve my<br>knowledge and skills.",
+    "INFO_3": "In my profession, programming isn't just about<br>writing code; it's a creative form of problem-<br>solving. I take pride in my ability to distill complex<br>technical challenges into simple, user-friendly<br>solutions. This way, I help you achieve your goals<br>and bring your visions to life."
+  }, 
+
+  "SKILLS_INFORMATION": { 
+    "TITLE": "My skills",
+    "EXPERIENCE": "I have gained experience in building projects with different \nfrontend technologies and concepts.",
+    "LOOKING": "Looking for",
+    "ANOTHER_SKILL": "another skill ?",
+    "MESSAGE": "Feel free to contact me. I look forward to expanding \non my previous knowledge."
+  },
+
+  "PROJECTS": {
+    "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my\nskills in action."
+  }, 
+
+  "SINGLE_PROJECT": {
+    "DESCRIPTION_1": "Task manager inspired by the Kanban System.<br>Create and organize tasks and drop functions.<br>Assign users and categories.",
+    "DESCRIPTION_2": "A simple Jump-and-Run game based on an<br> object-oriented approach.<br>Help Sharkie to find coins and poison bottles.<br>Fight against the killer whale.",
+    "DESCRIPTION_3": "This App is a Slack Clone App.<br>It revolutionizes team communication<br>and collaboration.<br>Real-time messaging and<br> robust channel organization."
+  }, 
+
+  "CONTACT": {
+    "TITLE": "Contact"
+  }, 
+  
+  "CONTACT_FORM": {
+    "TITLE": "Got a problem to solve?",
+    "DESCRIPTION": "Contact me through this form, I am interested in hearing<br>from you, knowing your ideas and contributing to your<br>projects with my work.",
+    "BONUS_INFO": "Need a Frontend developer? <b>Contact me!</b>",
+    "PLACEHOLDER_NAME": "Your name",
+    "ALERT_NAME": "Your name is required",
+    "PLACEHOLDER_MAIL": "Your email",
+    "ALERT_MAIL": "Your mail is required",
+    "PLACEHOLDER_MESSAGE": "Your message",
+    "ALERT_MESSAGE": "Your message is empty",
+    "READ_PRIVACY_POLICY": "I've read the",
+    "PRIVACY_POLICY": "privacy policy",
+    "READ_PRIVACY_POLICY2": "and agree to the processing of my data.",
+    "ALERT_PRIVACY_POLICY": "Please accept the privacy policy.",
+    "BUTTON": "Send message"
+  }, 
+
+  "FOOTER": { 
+    "LEGAL_NOTICE_1": "Legal N",
+    "LEGAL_NOTICE_2": "otice"
+  },
+
+  "MAIL_OVERLAY": {
+    "SUCCESS_MESSAGE": "Your email has been successfully sent.\n\nI will respond to you as soon as possible.\n\nThank you!",
+    "CLOSING_MESSAGE": "This window will close automatically."
+  }, 
+  
+  "LEGAL_NOTICE": {
+    "TITLE": "Legal Notice",
+    "INFO": "Information pursuant to § 5 TMG",
+    "DISCLAIMER": "Disclaimer",
+    "CONTENT_LIABILITY": "Liability for Content",
+    "CONTENT_INFO": "The content of this website has been created with the utmost care.<br>However, I cannot guarantee the accuracy, completeness, or timeliness of the content.",
+    "LINKS_LIABILITY": "Liability for Links",
+    "LINKS_INFO": "My portfolio may contain links to external third-party websites. I have no control over the content of<br> these websites and therefore cannot assume any liability for them.",
+    "COPYRIGHT": "Copyright",
+    "COPYRIGHT_INFO": "The content and works created by me in this website are subject to copyright law. Any reproduction,<br> editing, or distribution requires my explicit permission."
+  },
+
+  "PRIVACY_POLICY": {
+    "TITLE": "Privacy Policy",
+    "INFO": "General Information",
+    "INFO2": "This Privacy Policy explains how personal data is processed on my portfolio website.",
+    "INFO3": "Responsible for Data Processing",
+    "DATA_COLLECTING": "Data Collection and Processing",
+    "SERVER_LOG": "Server Log Files",
+    "SERVER_LOG_INFO": "When visiting this website, certain data is automatically collected by the server and stored in log<br> files. This includes:<br> • IP address<br> • Date and time of access<br> • Browser type and version<br> • Operating system<br> • Referrer URL (previously visited page)<br> This data is used for technical security and website optimization and is not<br> linked to individuals.",
+    "FONTS": "Google Fonts",
+    "FONTS_INFO": "This website uses Google Fonts to ensure a consistent and appealing design. Google Fonts are<br> loaded from Google servers. When accessing these fonts, your browser may<br> transmit data such as your IP address to Google.",
+    "RIGHTS": "Your Rights",
+    "RIGHTS_INFO": "You have the right to:<br> • Request information about stored personal data.<br> • Request correction or deletion of your data.<br> • Object to data processing under certain conditions.<br> To exercise these rights, please contact me at jessicamanczak@gmx.de.",
+    "DATA_SECURITY": "Data Security",
+    "DATA_SECURITY_INFO": "I take appropriate measures to protect personal data from unauthorized access or misuse.",
+    "UPDATE": "Changes to This Privacy Policy",
+    "PRIVACY_POLICY_UPDATE": "I may update this Privacy Policy when necessary. The latest version will always be available on this<br> website."
+  },
+
+  "SKILLBUBBLE": {
+    "TITLE": "I have a special<br />interest in learning"
+  }
+}
+

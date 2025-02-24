@@ -5,60 +5,27 @@
   autoscroll="true"
 >
   <div>
-    <h1>Privacy Policy</h1>
+    <h1>{{ "PRIVACY_POLICY.TITLE" | translate }}</h1>
     <img (click)="goBack()" src="assets/img/return.png" alt="Go back" />
   </div>
-  <h2>General Information</h2>
-  <p>
-    This Privacy Policy explains how personal data is processed on my portfolio
-    website.
-  </p>
-  <h3>Responsible for Data Processing</h3>
+  <h2>{{ "PRIVACY_POLICY.INFO" | translate }}</h2>
+  <p [innerHTML]="'PRIVACY_POLICY.INFO2' | translate"></p>
+  <h3>{{ "PRIVACY_POLICY.INFO3" | translate }}</h3>
   <p>
     Jessica Manczak<br />
     Rathausstraße 94<br />
     52477 Alsdorf<br /><br />
     jessicamanczak&#64;gmx.de
   </p>
-  <h2>Data Collection and Processing</h2>
-  <h3>Server Log Files</h3>
-  <p>
-    When visitin this website, certain data is automatically collected by the
-    server and stored in log<br />
-    files. This includes:<br />
-    &#8226; IP adress<br />
-    &#8226; Date and time of access<br />
-    &#8226; Browser type and version<br />
-    &#8226; Operating system<br />
-    &#8226; Referrer URL (previously visited page)<br />
-    This data is used for technical security and website optimization and is not
-    linked to individuals.
-  </p>
-  <h3>Google Fonts</h3>
-  <p>
-    This website uses Google Fonts to ensure a consistent and appealing design.
-    Google Fonts are<br />
-    loaded from Google servers. When accessing these fonts, your browser may
-    transmit data such as<br />
-    your IP address to Google.
-  </p>
-  <h2>Your Rights</h2>
-  <p>
-    You have the right to:<br />
-    &#8226; Request information about stores personal data.<br />
-    &#8226; Request correction or deletion of your data.<br />
-    &#8226; Object to data processing under certain conditions.<br />
-    To excersice these rights, please contact me at jessicamanczak&#64;gmx.de.
-  </p>
-  <h2>Data Security</h2>
-  <p>
-    I take appropriate measures to protect personal data from unauthorized
-    access or misuse.
-  </p>
-  <h2>Changes to This Privacy Policy</h2>
-  <p>
-    I may update this Privacy Policy when necessary. The latest version will
-    always be available on this<br />
-    website.
-  </p>
+  <h2>{{ "PRIVACY_POLICY.DATA_COLLECTING" | translate }}</h2>
+  <h3>{{ "PRIVACY_POLICY.SERVER_LOG" | translate }}</h3>
+  <p [innerHTML]="'PRIVACY_POLICY.SERVER_LOG_INFO' | translate"></p>
+  <h3>{{ "PRIVACY_POLICY.FONTS" | translate }}</h3>
+  <p [innerHTML]="'PRIVACY_POLICY.FONTS_INFO' | translate"></p>
+  <h2>{{ "PRIVACY_POLICY.RIGHTS" | translate }}</h2>
+  <p [innerHTML]="'PRIVACY_POLICY.RIGHTS_INFO' | translate"></p>
+  <h2>{{ "PRIVACY_POLICY.DATA_SECURITY" | translate }}</h2>
+  <p [innerHTML]="'PRIVACY_POLICY.DATA_SECURITY_INFO' | translate"></p>
+  <h2>{{ "PRIVACY_POLICY.UPDATE" | translate }}</h2>
+  <p [innerHTML]="'PRIVACY_POLICY.PRIVACY_POLICY_UPDATE' | translate"></p>
 </div>

@@ -1,13 +1,32 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent {
   title = 'portfolio';
+
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const savedLang = localStorage.getItem('language') || 'en';
+      this.translate.use(savedLang);
+    }
+  }
+
+  switchLanguage() {
+    const newLang = this.translate.currentLang === 'en' ? 'de' : 'en';
+    this.translate.use(newLang);
+    
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem('language', newLang);
+    }
+  }
 }
