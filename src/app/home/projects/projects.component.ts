@@ -1,7 +1,7 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
-import { SingleProjectComponent } from '../single-project/single-project.component';
+import { SingleProjectComponent } from './single-project/single-project.component';
 
 @Component({
   selector: 'app-projects',

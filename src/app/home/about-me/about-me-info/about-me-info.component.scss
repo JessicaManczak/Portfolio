@@ -1,5 +1,4 @@
 .about-me {
-    background-color: #131D2F;
     color: white;
     display: flex;
     flex-direction: column;
@@ -37,4 +36,31 @@
         transform: scale(1.1);
     }
     }
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        padding: 0px 10vh 0px 3vh;
+    }
+    h1 {
+        font-size: 70px !important;
+    }
+}
+
+@media (max-width: 576px)  { 
+    .about-me{
+    padding: 0px 3vh 0px 0vh;
+    } 
+    h1 {
+        font-size: 60px !important;
+    }
+}
+
+@media (max-width: 430px) {
+    h1 { 
+     font-size: 48px !important;
+    }
+
+    p { 
+        font-size: 14px !important;}
 }

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { SkillBubbleComponent } from "../skill-bubble/skill-bubble.component";
+import { SkillBubbleComponent } from '../skill-bubble/skill-bubble.component';
 
 @Component({
   selector: 'app-skills-icons',

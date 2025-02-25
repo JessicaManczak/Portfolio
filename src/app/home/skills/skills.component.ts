@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { SkillsIconsComponent } from '../skills-icons/skills-icons.component';
-import { SkillsInformationComponent } from '../skills-information/skills-information.component';
+import { SkillsInformationTopComponent } from './skills-information-top/skills-information-top.component';
+import { SkillsIconsComponent } from './skills-icons/skills-icons.component';
+import { SkillsInformationBottomComponent } from './skills-information-bottom/skills-information-bottom.component';
+
 
 @Component({
   selector: 'app-skills',
-  imports: [SkillsIconsComponent, SkillsInformationComponent],
+  imports: [SkillsIconsComponent, SkillsInformationBottomComponent, SkillsInformationTopComponent],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })

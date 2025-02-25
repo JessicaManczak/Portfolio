@@ -34,7 +34,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MailOverlayComponent } from './mail-overlay/mail-overlay.component';
-import { SkillBubbleComponent } from './skill-bubble/skill-bubble.component';
+import { SkillBubbleComponent } from './skills/skill-bubble/skill-bubble.component';
 
 @Component({
   selector: 'app-home',

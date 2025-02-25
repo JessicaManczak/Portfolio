@@ -13,6 +13,8 @@
     padding-top: 109px;
     justify-content: flex-end;
     gap: 31px;
+    position: relative;
+    left: 10vh;
     
         h1 {
             margin: 0;
@@ -23,52 +25,73 @@
 }
 
 .portfolio-info {
-        display: flex;
-        align-items: center;
-        padding: 0;
-    }
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
 
-    .single-project-structure {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 35px 100px 0px 100px;
-    }
+.single-project-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 100px 0px 100px;
+    z-index: 4;
+}
 
-    .portfolio-background {
-        float: left;
-        margin-top: -175vh;
-    }
+.portfolio-background {
+    float: left;
+    margin-top: -175vh;
+}
 
-    .single-project-background {
-        float: left;
-        margin-top: -71vh;
+.single-project-background {
+    float: left;
+    margin-top: -71vh;
 
-            img {
-                width: 30vw;
-                height: 68vh;
-            }
-    }
+        img {
+            width: 30vw;
+            height: 68vh;
+        }
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) { //
     .portfolio-top {
         position: relative;
-        left: 22vh;
+        left: 30vh;
+        gap: 15px !important;
     }
-        
-        .single-project-structure {
-            padding: 35px 80px 0px 80px !important;
-        }
+    
+    .single-project-structure {
+        padding: 35px 80px 0px 80px !important;
     }
-
-
+}
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 75px !important;
+        font-size: 60px !important;
         }
 
         .portfolio-top {
-            left: 33vh;
+            left: 35vh;
+        }
+
+        .green {
+            position: relative;
+            top: -60vh;
         }
     }
+
+    @media (max-width: 576px) {
+            .portfolio-top {
+                left: 45vh;
+            }
+
+            .purple {
+                display: none;
+            }
+        }
+
+        @media (max-width: 430px) {
+            h1 {
+                font-size: 48px !important;
+                }
+        }

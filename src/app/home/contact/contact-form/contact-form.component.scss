@@ -3,6 +3,7 @@
     justify-content: space-between;
     height: auto;
     padding: 35px 10vw 109px 10vw;
+    gap: 5vw;
 }
 
 .contact-info {
@@ -221,6 +222,10 @@ form {
         .check {
             width: 20px;
             height: 20px;
+        }
+
+        .privacy-policy {
+            font-size: 14px !important;
         }
     }
 

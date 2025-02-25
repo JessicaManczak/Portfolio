@@ -11,7 +11,8 @@ import { RouterModule } from '@angular/router';
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
-import { MailOverlayComponent } from "../mail-overlay/mail-overlay.component";
+import { MailOverlayComponent } from '../../mail-overlay/mail-overlay.component';
+
 
 @Component({
   selector: 'app-contact-form',
@@ -73,10 +74,14 @@ export class ContactFormComponent {
     if (this.mailTest) {
       console.log("Mail-Test aktiv, kein Request gesendet.");
       ngForm.resetForm();
+      this.showMailOverlay = true;
+      setTimeout(() => {
+        this.showMailOverlay = false;
+      }, 6000);
       return;
     }
   
-    this.http.post(this.post.endPoint, this.post.body(this.contactData))
+/*     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
         next: (response) => {
           console.log("Formular erfolgreich gesendet:", response);
@@ -90,7 +95,7 @@ export class ContactFormComponent {
           console.error("Fehler beim Absenden:", error);
         },
         complete: () => console.info("Senden abgeschlossen"),
-      });
+      }); */
   }
 
   constructor(

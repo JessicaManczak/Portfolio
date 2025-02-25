@@ -32,11 +32,11 @@
   }, 
 
   "SKILLS_INFORMATION": { 
-    "TITLE": "My skills",
-    "EXPERIENCE": "I have gained experience in building projects with different \nfrontend technologies and concepts.",
+    "TITLE": "My Skills",
+    "EXPERIENCE": "I have gained experience in building projects<br> different \nfrontend technologies and concepts.",
     "LOOKING": "Looking for",
     "ANOTHER_SKILL": "another skill ?",
-    "MESSAGE": "Feel free to contact me. I look forward to expanding \non my previous knowledge."
+    "MESSAGE": "Feel free to contact me.<br> I look forward to expanding \non my previous knowledge."
   },
 
   "PROJECTS": {

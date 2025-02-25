@@ -1,16 +1,16 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
-import { ButtonNavigateToContactComponent } from "../button-navigate-to-contact/button-navigate-to-contact.component";
+import { ButtonNavigateToContactComponent } from '../../button-navigate-to-contact/button-navigate-to-contact.component';
 
 @Component({
-  selector: 'app-skills-information',
+  selector: 'app-skills-information-bottom',
   imports: [TranslatePipe, ButtonNavigateToContactComponent],
-  templateUrl: './skills-information.component.html',
-  styleUrl: './skills-information.component.scss'
+  templateUrl: './skills-information-bottom.component.html',
+  styleUrl: './skills-information-bottom.component.scss'
 })
-export class SkillsInformationComponent {
-  constructor(
+export class SkillsInformationBottomComponent {
+constructor(
     private translate: TranslateService,
     @Inject(PLATFORM_ID) private platformId: object 
   ) {
@@ -22,5 +22,4 @@ export class SkillsInformationComponent {
       this.translate.use(savedLang);
     }
   }
-
 }

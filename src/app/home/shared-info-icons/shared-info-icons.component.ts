@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-shared-info-icons',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './shared-info-icons.component.html',
   styleUrl: './shared-info-icons.component.scss'

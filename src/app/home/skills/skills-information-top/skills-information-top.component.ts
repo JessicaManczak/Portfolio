@@ -1,20 +1,17 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
-import { ContactFormComponent } from './contact-form/contact-form.component';
-
 
 @Component({
-  selector: 'app-contact',
-  imports: [TranslatePipe, ContactFormComponent],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  selector: 'app-skills-information-top',
+  imports: [TranslatePipe],
+  templateUrl: './skills-information-top.component.html',
+  styleUrl: './skills-information-top.component.scss'
 })
-
-export class ContactComponent {
+export class SkillsInformationTopComponent {
   constructor(
     private translate: TranslateService,
-    @Inject(PLATFORM_ID) private platformId: object
+    @Inject(PLATFORM_ID) private platformId: object 
   ) {
     this.translate.addLangs(['en', 'de']);
     this.translate.setDefaultLang('en');

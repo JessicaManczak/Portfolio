@@ -32,9 +32,19 @@
     }
 }
 
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 80px !important;
+    }
+    .contact {
+        position: relative;
+        left: -15vh;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
-        font-size: 75px !important;
+        font-size: 70px !important;
     }
 
     .contact {

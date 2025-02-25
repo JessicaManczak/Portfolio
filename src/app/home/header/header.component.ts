@@ -1,9 +1,9 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import { HeaderLinkComponent } from "../header-link/header-link.component";
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from "@ngx-translate/core";
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { HeaderLinkComponent } from './header-link/header-link.component';
 
 @Component({
   selector: 'app-header',

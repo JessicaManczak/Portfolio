@@ -1,10 +1,10 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
-import { FrontPageImgComponent } from '../front-page-img/front-page-img.component';
-import { FrontPageInfoComponent } from '../front-page-info/front-page-info.component';
+import { FrontPageImgComponent } from './front-page-img/front-page-img.component';
+import { FrontPageInfoComponent } from './front-page-info/front-page-info.component';
 import { ButtonNavigateToContactComponent } from "../button-navigate-to-contact/button-navigate-to-contact.component";
-import { FrontPageFooterComponent } from "../front-page-footer/front-page-footer.component";
+import { FrontPageFooterComponent } from "./front-page-footer/front-page-footer.component";
 import { ScrollDownComponent } from "../scroll-down/scroll-down.component";
 
 @Component({

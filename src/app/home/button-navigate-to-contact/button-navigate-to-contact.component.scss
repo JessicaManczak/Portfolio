@@ -18,3 +18,10 @@ button {
             background-color: #9747FF;
     }
 }
+
+@media (max-width: 768px) {
+    .button-div {
+       display: flex; 
+       justify-content: center;
+    }
+}
