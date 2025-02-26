@@ -1,10 +1,7 @@
-
-- Portfolio hochladen - auf git pushen
+ 
 
 EINKOMMENTIEREN
-- console.logs raus X
-
-- Join - Tasks hinzufügen - auf git pushen
+- Join - Tasks hinzufügen 
 
 
 Responsive 
