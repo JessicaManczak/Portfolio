@@ -24,7 +24,6 @@ export class HeaderLinkComponent {
     this.translate.addLangs(['en', 'de']);
     this.translate.setDefaultLang('en');
 
-    // Prüfen, ob die App im Browser läuft (nicht auf dem Server)
     if (isPlatformBrowser(this.platformId)) {
       const savedLang = localStorage.getItem('language') || 'en';
       this.translate.use(savedLang);
@@ -40,24 +39,4 @@ export class HeaderLinkComponent {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-
-   /*  selectedLink: string | null = null;
-
-  selectLink(link: string) {
-    this.selectedLink = link;
-  }
-
-  scrollToSection(sectionId: string) {
-    const section = document.getElementById(sectionId);
-    let body = document.body;
-  
-    if (section) {
-      body.classList.remove("no-scroll");
-      section.scrollIntoView({ behavior: 'smooth' });
-  
-      // Aktuellen Link als aktiv markieren
-      this.selectedLink = sectionId;
-    }
-  }  */
 }
