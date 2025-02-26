@@ -2,27 +2,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: 15vw 100px 0px 10vw;
+    padding-right: 100px;
 
     .front-page-info-section {
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 10;
+        margin-left: -15vw;
     }
 }
 
 .background-container {
     max-height: 100%;
     object-fit: contain;
-}
-
-img {
-    display: flex;
-    width: 100%;
-    height: 45vh;
-    position: relative;
-    z-index: 1;
+    margin-top: -30vh;
+    width: 100vw;
+    height: 50vh;
     overflow: hidden;
+
+    img {
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .social-icons-scroll-down {
@@ -32,4 +36,63 @@ img {
     margin-top: -120px;
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 1450px) {
+    .front-page-info-section {
+        margin-left: -5vw !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .background-container {
+        margin-top: -35vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .front-page-background {
+        flex-direction: column;
+        padding-right: 0px !important;
+        margin-top: -8vh;
+    }
+
+    .front-page-info-section {
+        margin-top: -18vh;
+    }
+
+    .background-container {
+        margin-top: -46vh;
+    }
+
+    app-scroll-down {
+        display: none;
+    }
+
+    app-front-page-footer {
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width: 380px) {
+    .front-page-info-section {
+        margin-top: -15vh;
+    }
+
+    .background-container {
+        margin-top: -46vh;
+    }
+
+    app-front-page-img {
+        height: 75vh;
+        overflow: hidden;
+    }
+
+    app-scroll-down {
+        display: none;
+    }
+
+    .social-icons-scroll-down {
+        margin-top: -12vh;
+    }
 }

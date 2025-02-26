@@ -17,7 +17,7 @@
   },
 
   "SCROLL_DOWN": {
-    "SCROLL": "Nach unten scrollen"
+    "SCROLL": "Runter"
   },
 
   "ABOUT_ME_INFO": {
@@ -32,11 +32,11 @@
   },
 
   "SKILLS_INFORMATION": {
-    "TITLE": "Meine Skills",
-    "EXPERIENCE": "Ich habe Erfahrung in der Umsetzung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+    "TITLE": "Skills",
+    "EXPERIENCE": "Ich habe Erfahrung in<br> der Umsetzung von Projekten<br> mit verschiedenen Frontend-Technologien<br> und Konzepten gesammelt.",
     "LOOKING": "Auf der Suche nach",
     "ANOTHER_SKILL": "einer anderen Fähigkeit?",
-    "MESSAGE": "Kontaktiere mich gerne. Ich freue mich darauf, mein Wissen weiter auszubauen."
+    "MESSAGE": "Kontaktiere mich gerne.<br>Ich freue mich darauf, mein Wissen weiter auszubauen."
   },
 
   "PROJECTS": {

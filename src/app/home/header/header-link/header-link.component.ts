@@ -38,7 +38,8 @@ export class HeaderLinkComponent {
     if (section) {
       body.classList.remove("no-scroll");
       section.scrollIntoView({ behavior: 'smooth' });
-    }};
+    }
+  };
 
 
    /*  selectedLink: string | null = null;

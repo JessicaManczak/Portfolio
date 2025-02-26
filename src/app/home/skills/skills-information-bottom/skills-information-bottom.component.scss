@@ -20,8 +20,9 @@
         line-height: 38.4px;
         margin: 0;
 
-        span {
+        .color {
             color: #9747FF;
+            font-size: 32px !important;
         }
     }
 }
@@ -41,7 +42,7 @@
         font-size: 24px !important;
     }
     .skill-main-information {
-        padding-right: 17vw !important;
+        padding-right: 20vw !important;
     }
 }
 

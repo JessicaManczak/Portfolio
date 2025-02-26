@@ -1,11 +1,12 @@
-To Do 
 
-Funktionalität 
-- Alle Features kontrollieren
-- LIVE Links auf Domain hochladen
+- Portfolio hochladen 
 
-Sonstiges 
-- Projekte testen 
+EINKOMMENTIEREN
+- contact form code bereinigenX
+- console.logs raus X
+
+- Join - Tasks hinzufügen - board.html wird nicht gefunden  
+
 
 Responsive 
 @media (max-width: 1920px) {}
@@ -15,10 +16,3 @@ Responsive
 @media (max-width: 576px) 
 @media (max-width: 430px)
 
-
-SHISHI
-- DEUTSCH IST FUCKED
-- Responsive
-skills - klein button nicht mehr mittig 
-- contact form code bereinigenX
-- console.logs raus X

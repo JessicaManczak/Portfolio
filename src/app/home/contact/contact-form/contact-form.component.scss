@@ -1,3 +1,15 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px rgb(20, 29, 47) inset !important;
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+    padding-left: 15px !important;
+}
+
 .contact-section {
     display: flex;
     justify-content: space-between;
@@ -70,16 +82,16 @@ form {
         padding-left: 10px;
     }
 
-    input[type=text], [type=email], select, textarea  {
+        input[type=text], [type=email], select, textarea  {
+        font-family: 'Poppins', "Helvetica Neue", sans-serif !important; 
         background-color: #141D2F;
         font-weight: 400;
         font-size: 16px;
         line-height: 19.2px;
-        /* width: 590px; */
         height: 50px;
         border-radius: 10px;
         border: 1px solid #9747FF;
-        color: white;
+        color: white !important;
 
         &:hover {
             border: 1px solid #70E61C;
@@ -89,11 +101,9 @@ form {
     }
 
     textarea { 
-        font-family: 'Poppins', "Helvetica Neue", sans-serif !important; 
         height: 202px;
         padding: 15px 1px 15px 1px;
         resize: none;
-        color: white;
     }   
         
     input[type=submit] {
@@ -148,6 +158,8 @@ form {
         }
     }
 }
+
+
 
 .scroll-up-div {
     align-self: flex-end; 

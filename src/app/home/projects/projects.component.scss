@@ -40,7 +40,7 @@
 
 .portfolio-background {
     float: left;
-    margin-top: -175vh;
+    margin-top: -150vh;
 }
 
 .single-project-background {
@@ -66,32 +66,33 @@
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 60px !important;
-        }
-
-        .portfolio-top {
-            left: 35vh;
-        }
-
-        .green {
-            position: relative;
-            top: -60vh;
-        }
+h1 {
+    font-size: 60px !important;
     }
 
-    @media (max-width: 576px) {
-            .portfolio-top {
-                left: 45vh;
-            }
+    .portfolio-top {
+        left: 35vh;
+    }
 
-            .purple {
-                display: none;
-            }
-        }
+    .green {
+        position: relative;
+        top: -75vh;
+        z-index: -1;
+    }
+}
 
-        @media (max-width: 430px) {
-            h1 {
-                font-size: 48px !important;
-                }
-        }
+@media (max-width: 576px) {
+    .portfolio-top {
+        left: 25rem;
+    }
+
+    .purple {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    h1 {
+        font-size: 48px !important;
+    }
+}

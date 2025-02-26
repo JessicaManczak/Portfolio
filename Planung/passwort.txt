@@ -5,8 +5,9 @@ Zugangsdaten
 
 Über FileZilla einloggen mit Domain von AllInkl
 	
+Port: 21?
 /jessica-manczak.de/
-
-Nutzer: f0173a4e
+Beschreibung: JessicaManczak
+Nutzername: f0173a4e
 
 Passwort: ZsRYx5GAyPXHYf#

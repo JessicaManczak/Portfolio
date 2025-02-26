@@ -1,9 +1,9 @@
 div {
-    width: min(40vw, 646px); 
-    height: min(50vh, 705px); 
     background-color: #141D2F;
     display: grid;
     place-items: center;
+    height: calc(100vh - 109px);
+    overflow: hidden;
 
     img {
         grid-column: 1;
@@ -13,16 +13,17 @@ div {
     .profile-img { 
         height: 100vh;
         position: relative;
-        top: -80px;
         z-index: 1;
+        margin-top: 5vh;
     }
     
     .background-img {
-        width: min(50vw, 600px); 
-        height: min(80vh, 650px);
+        width: 60vw; 
+        height: 100vh;
         position: relative;
         z-index: 0;
-        top: -10vh;
+        margin-left: auto;
+        margin-right: auto;
         left: -2vw;
     }
 }
@@ -30,19 +31,20 @@ div {
 @media (max-width: 1024px) {
     .profile-img {
         height: 80vh !important;
-        top: 25px !important;
+    }
+
+    .background-img {
+        height: 80vh !important;
     }
 }
 
 @media (max-width: 768px) {
     .profile-img {
-        height: 80vh !important;
-        top: 35px !important;
+        margin-top: 0vh !important;
     }
-}
 
-@media (max-width: 576px) {}
-
-@media (max-width: 430px) {
-
+    .background-img {
+        height: 100vh !important;
+        width: 100vw !important;
+    }
 }
