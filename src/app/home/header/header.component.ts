@@ -43,7 +43,6 @@ export class HeaderComponent {
   }
 
   selectLanguage(lang: string): void {
-    console.log(lang);
     this.translate.use(lang);
 
     if (isPlatformBrowser(this.platformId)) {

@@ -1,11 +1,10 @@
 
-- Portfolio hochladen 
+- Portfolio hochladen - auf git pushen
 
 EINKOMMENTIEREN
-- contact form code bereinigenX
 - console.logs raus X
 
-- Join - Tasks hinzufügen - board.html wird nicht gefunden  
+- Join - Tasks hinzufügen - auf git pushen
 
 
 Responsive 
