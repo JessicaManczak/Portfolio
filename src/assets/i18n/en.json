@@ -71,8 +71,7 @@
   }, 
 
   "FOOTER": { 
-    "LEGAL_NOTICE_1": "Legal N",
-    "LEGAL_NOTICE_2": "otice"
+    "LEGAL_NOTICE": "Legal Notice"
   },
 
   "MAIL_OVERLAY": {
