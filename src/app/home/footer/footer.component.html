@@ -1,22 +1,22 @@
 <footer>
   <div>
     <h1>
-      <a href="#">
+      <div (click)="scrollWithRedirect()">
         Jess<span class="colored-i"><span>i</span></span
-        >c<span style="color: #70e61c">a</span></a
-      >
+        >c<span style="color: #70e61c">a</span>
+      </div>
     </h1>
-    <p class="d-none-mobile">
-      <a [routerLink]="'/legal-notice'">
+    <div class="legal d-none-mobile">
+      <button [routerLink]="'/legal-notice'" class="legal-btn">
         {{ "FOOTER.LEGAL_NOTICE" | translate }}
-      </a>
-    </p>
+      </button>
+    </div>
   </div>
   <div class="name-date">&#169; Jessica Manczak 2025</div>
   <app-shared-info-icons></app-shared-info-icons>
-  <p class="d-none-desktop">
-    <a [routerLink]="'/legal-notice'">
+  <div class="legal d-none-desktop">
+    <button type="button" [routerLink]="'/legal-notice'" class="legal-btn">
       {{ "FOOTER.LEGAL_NOTICE" | translate }}
-    </a>
-  </p>
+    </button>
+  </div>
 </footer>

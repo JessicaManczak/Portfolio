@@ -1,5 +1,5 @@
 @for(item of singleProject; track item.img){ @if(isOdd(item.img)){
-<div class="single-project-section reverse">
+<div class="single-project-section reverse" *ngIf="isVisible" @slideInRight>
   <div>
     <img [src]="item.img" alt="Projektanzeige" />
   </div>
@@ -18,7 +18,7 @@
   </div>
 </div>
 } @else{
-<div class="single-project-section">
+<div class="single-project-section" *ngIf="isVisible" @slideInLeft>
   <div>
     <img [src]="item.img" alt="Projektanzeige" />
   </div>

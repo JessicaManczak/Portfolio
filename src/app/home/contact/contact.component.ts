@@ -3,7 +3,6 @@ import { isPlatformBrowser } from '@angular/common';
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
-
 @Component({
   selector: 'app-contact',
   imports: [TranslatePipe, ContactFormComponent],

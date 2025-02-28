@@ -45,20 +45,26 @@
         <p [innerHTML]="'CONTACT_FORM.ALERT_MESSAGE' | translate"></p>
       </div>
       <div class="checkbox-div">
-        <input
-          type="checkbox"
-          class="check"
-          #privacy="ngModel"
-          [(ngModel)]="contactData.privacy"
-          name="privacy"
-          (click)="togglePrivacy()"
-          required
-        />
+        <div>
+          <input
+            type="checkbox"
+            class="check"
+            #privacy="ngModel"
+            [(ngModel)]="contactData.privacy"
+            name="privacy"
+            (click)="togglePrivacy()"
+            required
+          />
+        </div>
         <p class="privacy-policy">
           {{ "CONTACT_FORM.READ_PRIVACY_POLICY" | translate }}
-          <a [routerLink]="'/privacy-policy'" style="color: #9747ff">
+          <button
+            type="button"
+            [routerLink]="'/privacy-policy'"
+            class="privacy-btn"
+          >
             {{ "CONTACT_FORM.PRIVACY_POLICY" | translate }}
-          </a>
+          </button>
           {{ "CONTACT_FORM.READ_PRIVACY_POLICY2" | translate }}
         </p>
       </div>
@@ -73,9 +79,7 @@
     </form>
     <div class="scroll-up-div">
       <div>
-        <a routerLink="'/privacy-policy'"
-          ><img src="assets/img/scrollup.png" alt="Scroll Up"
-        /></a>
+        <img src="assets/img/scrollup.png" alt="Scroll Up" />
       </div>
     </div>
   </div>

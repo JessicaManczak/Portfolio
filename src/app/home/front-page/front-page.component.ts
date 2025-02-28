@@ -6,10 +6,11 @@ import { FrontPageInfoComponent } from './front-page-info/front-page-info.compon
 import { ButtonNavigateToContactComponent } from "../button-navigate-to-contact/button-navigate-to-contact.component";
 import { FrontPageFooterComponent } from "./front-page-footer/front-page-footer.component";
 import { ScrollDownComponent } from "../scroll-down/scroll-down.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-front-page',
-  imports: [TranslatePipe, FrontPageImgComponent, FrontPageInfoComponent, ButtonNavigateToContactComponent, FrontPageFooterComponent, ScrollDownComponent],
+  imports: [RouterModule, TranslatePipe, FrontPageImgComponent, FrontPageInfoComponent, ButtonNavigateToContactComponent, FrontPageFooterComponent, ScrollDownComponent],
   templateUrl: './front-page.component.html',
   styleUrl: './front-page.component.scss'
 })

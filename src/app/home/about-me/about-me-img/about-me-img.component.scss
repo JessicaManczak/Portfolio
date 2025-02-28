@@ -18,7 +18,7 @@
         overflow: hidden;
 
         img {   
-            width: 44vh;
+            width: min(450px, 25vw);
             position: relative;
             top: 8vh;
             left: -3vw;
@@ -26,7 +26,25 @@
     }
 
     .green-deko-line {
-        display: flex;        
+        display: flex;
+    }
+}
+
+@media (min-width: 1980px) {
+    .green-deko-line {
+        width: 30vw;
+        height: 4px;
+        overflow: hidden;
+
+        img {   
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    img {   
+        width: 43vh !important;
     }
 }
 
@@ -37,7 +55,8 @@
             height: 14rem;
 
             img {   
-                width: 22vh;
+                width: 22vh !important;
+                top: 5vh !important;
             }
         }
     }

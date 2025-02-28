@@ -3,20 +3,23 @@
     <img [src]="item.img" [alt]="item.description + ' Icon'" />
     <span>{{ item.description }}</span>
   </div>
-
-  <div
-    class="continually-learning-icon"
-    (mouseenter)="showSkillBubble = true"
-    (mouseleave)="showSkillBubble = false"
-  >
-    @if(showSkillBubble){
-    <app-skill-bubble></app-skill-bubble>
-    } @else {
+  <div class="skill-icon">
     <img
-      class="continually-learning"
+      class="continually-learning-img"
       src="assets/img/continuallylearning.png"
       alt="Continually Learning Icon"
+      (mouseenter)="showSkillBubble = true"
+      (mouseleave)="showSkillBubble = false"
+      *ngIf="!showSkillBubble"
     />
-    }
+    <img
+      class="continually-learning-img"
+      src="assets/img/continuallylearning_white.png"
+      alt="Icon"
+      *ngIf="showSkillBubble"
+      (mouseenter)="showSkillBubble = true"
+      (mouseleave)="showSkillBubble = false"
+    />
+    <app-skill-bubble *ngIf="showSkillBubble"></app-skill-bubble>
   </div>
 </div>

@@ -2,7 +2,7 @@ import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslatePipe, TranslateService } from "@ngx-translate/core";
 import { SharedInfoIconsComponent } from "../shared-info-icons/shared-info-icons.component";
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -13,7 +13,8 @@ import { RouterModule } from '@angular/router';
 export class FooterComponent {
   constructor(
     private translate: TranslateService,
-    @Inject(PLATFORM_ID) private platformId: object 
+    @Inject(PLATFORM_ID) private platformId: object,
+    private router: Router
   ) {
     this.translate.addLangs(['en', 'de']);
     this.translate.setDefaultLang('en');
@@ -22,6 +23,29 @@ export class FooterComponent {
       const savedLang = localStorage.getItem('language') || 'en';
       this.translate.use(savedLang);
     }
+  }
+
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    let body = document.body;
+
+    if (section) {
+      body.classList.remove("no-scroll");
+      section.scrollIntoView({behavior: 'smooth' });     
+    }
+  };
+
+  scrollWithRedirect() {
+    if (this.router.url !== '') {
+      this.router.navigate(['']);
+      setTimeout(() => 
+        {
+          this.scrollToSection('home');
+        },
+        500);   
+      } else {
+        this.scrollToSection('home');
+      }
   }
 }
 

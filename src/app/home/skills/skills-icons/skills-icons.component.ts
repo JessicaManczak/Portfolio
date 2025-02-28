@@ -23,5 +23,5 @@ skillIcons: {img: string, description: string} [] = [
   { img: 'assets/img/materialdesign.png', description: 'Material Design'}
 ]
 
- showSkillBubble: boolean = false;
+showSkillBubble: boolean = false;
 }

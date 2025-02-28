@@ -1,7 +1,7 @@
 .front-page-background{
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-around; 
     padding-right: 100px;
 
     .front-page-info-section {
@@ -40,9 +40,12 @@
 
 @media (max-width: 1450px) {
     .front-page-info-section {
-        margin-left: -5vw !important;
-    }
-}
+                max-width: 1440px;   
+                margin: 0 auto;     
+                padding: 13vh 15vw 0vh;   
+                gap: 2vw;  
+            }
+        }
 
 @media (max-width: 1024px) {
     .background-container {

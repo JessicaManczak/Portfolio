@@ -2,12 +2,13 @@ import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from "@ngx-translate/core";
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { HeaderLinkComponent } from './header-link/header-link.component';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [HeaderLinkComponent, MatButtonToggleModule],
+  imports: [HeaderLinkComponent, RouterModule, MatButtonToggleModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   animations: [
@@ -31,7 +32,8 @@ export class HeaderComponent {
 
   constructor(
     public translate: TranslateService,
-    @Inject(PLATFORM_ID) private platformId: object
+    @Inject(PLATFORM_ID) private platformId: object,
+    private router: Router
   ) {
     this.translate.addLangs(['en', 'de']);
     this.translate.setDefaultLang('en');
@@ -67,5 +69,28 @@ export class HeaderComponent {
         }
       }
     }
+  }
+
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    let body = document.body;
+
+    if (section) {
+      body.classList.remove("no-scroll");
+      section.scrollIntoView({behavior: 'smooth' });     
+    }
+  };
+
+  scrollWithRedirect() {
+    if (this.router.url !== '') {
+      this.router.navigate(['']);
+      setTimeout(() => 
+        {
+          this.scrollToSection('home');
+        },
+        500);   
+      } else {
+        this.scrollToSection('home');
+      }
   }
 }

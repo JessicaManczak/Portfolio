@@ -2,34 +2,12 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
 }
 
 app-front-page {
-    padding-top: 109px;
+    padding-top: 109px;    
 }
 
-.scrollbar {
-    height: 100vh; 
-    overflow-y: auto; 
-    overflow-x: hidden;
-    scroll-behavior: smooth; 
-    padding-top: 109px;
-    
-
-    &::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    &::-webkit-scrollbar-track {
-        background: #9747ff !important;
-        
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: #70e61c;
-    }
-
-    scrollbar-color: #70e61c #9747ff ;
-    scrollbar-width: thin;
+.about {
+    scroll-margin: 109px;
 }

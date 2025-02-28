@@ -29,6 +29,6 @@ export const appConfig: ApplicationConfig = {
     provideAnimations(),
     importProvidersFrom(MatToolbarModule),  
     provideClientHydration(),
-    importProvidersFrom(TranslateModule.forRoot(provideTranslation())),  
+    importProvidersFrom(TranslateModule.forRoot(provideTranslation())), 
   ],
 };
