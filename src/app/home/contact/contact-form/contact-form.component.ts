@@ -77,4 +77,15 @@ export class ContactFormComponent {
   togglePrivacy() {
     this.contactData.privacy = !this.contactData.privacy;
   }
+
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    let body = document.body;
+
+    if (section) {
+      body.classList.remove("no-scroll");
+      section.scrollIntoView({behavior: 'smooth' });     
+    }
+  };
+
 }

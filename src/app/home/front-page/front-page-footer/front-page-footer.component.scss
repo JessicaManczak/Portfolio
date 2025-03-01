@@ -1,8 +1,6 @@
 div {
     display: flex;
     align-items: center;
-    width: auto;
-    height: auto;
     gap: 32px;
     z-index: 1;
 
@@ -26,7 +24,7 @@ div {
 
 @media (min-width: 1900px) {
     div {
-        width: 40vw;
+        width: 42vw;
     }
 }
 

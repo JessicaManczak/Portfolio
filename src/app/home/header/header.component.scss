@@ -135,10 +135,10 @@ mat-button-toggle {
     color: black;
 }
 
-@media (min-width: 1980px) {
+@media (min-width: 2000px) {
     .header {
-        margin: 0 auto !important;
-        justify-content: space-around;
+        max-width: 1920px;
+        padding: 0 calc(50vw - 960px) 0 calc(50vw - 960px);
     }
 }
 

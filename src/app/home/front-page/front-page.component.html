@@ -1,16 +1,18 @@
-<div class="front-page-background">
-  <app-front-page-img></app-front-page-img>
-  <div class="front-page-info-section">
-    <app-front-page-info></app-front-page-info>
-    <app-button-navigate-to-contact
-      [buttonText]="'CONTACT_BUTTONS.FRONT_TALK' | translate"
-    ></app-button-navigate-to-contact>
+<div class="front-page-container">
+  <div class="front-page-background">
+    <app-front-page-img></app-front-page-img>
+    <div class="front-page-info-section">
+      <app-front-page-info></app-front-page-info>
+      <app-button-navigate-to-contact
+        [buttonText]="'CONTACT_BUTTONS.FRONT_TALK' | translate"
+      ></app-button-navigate-to-contact>
+    </div>
+  </div>
+  <div class="social-icons-scroll-down">
+    <app-front-page-footer></app-front-page-footer>
+    <app-scroll-down></app-scroll-down>
   </div>
 </div>
 <div class="background-container">
   <img src="assets/img/darkblue_grey_background.png" alt="Design-Background" />
-</div>
-<div class="social-icons-scroll-down">
-  <app-front-page-footer></app-front-page-footer>
-  <app-scroll-down></app-scroll-down>
 </div>

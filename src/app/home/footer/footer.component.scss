@@ -94,10 +94,10 @@ footer {
         display: none;
     }
 
-    @media (min-width: 1980px) {
+    @media (min-width: 2000px) {
         footer {
-            margin: 0 auto !important;
-            justify-content: space-around !important;
+            max-width: 1920px;
+            padding: 0 calc(50vw - 960px) 0 calc(50vw - 960px);
         }
     }    
 

@@ -1,7 +1,14 @@
+.front-page-container {
+    height: calc(95vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .front-page-background{
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-between; 
     padding-right: 100px;
 
     .front-page-info-section {
@@ -14,9 +21,8 @@
 }
 
 .background-container {
-    max-height: 100%;
     object-fit: contain;
-    margin-top: -30vh;
+    margin-top: -35vh;
     width: 100vw;
     height: 50vh;
     overflow: hidden;
@@ -33,19 +39,16 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: -120px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
-@media (max-width: 1450px) {
-    .front-page-info-section {
-                max-width: 1440px;   
-                margin: 0 auto;     
-                padding: 13vh 15vw 0vh;   
-                gap: 2vw;  
-            }
+@media (min-width: 2000px) {
+    .front-page-background {
+            max-width: 1920px;  
+            padding: 0 calc(50vw - 960px) 0 calc(50vw - 960px);
         }
+    }
 
 @media (max-width: 1024px) {
     .background-container {
@@ -57,11 +60,10 @@
     .front-page-background {
         flex-direction: column;
         padding-right: 0px !important;
-        margin-top: -8vh;
-    }
 
-    .front-page-info-section {
-        margin-top: -18vh;
+        .front-page-info-section {
+            margin-left: 0vw;
+        }
     }
 
     .background-container {
@@ -70,32 +72,11 @@
 
     app-scroll-down {
         display: none;
-    }
-
-    app-front-page-footer {
-        margin-top: 10vh;
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
     .front-page-info-section {
-        margin-top: -15vh;
-    }
-
-    .background-container {
-        margin-top: -46vh;
-    }
-
-    app-front-page-img {
-        height: 75vh;
-        overflow: hidden;
-    }
-
-    app-scroll-down {
-        display: none;
-    }
-
-    .social-icons-scroll-down {
-        margin-top: -12vh;
+        margin-left: 0 !important;
     }
 }
