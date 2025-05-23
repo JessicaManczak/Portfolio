@@ -13,6 +13,6 @@ export class SharedInfoIconsComponent {
   socialMediaLinks: {img: string, link: string} [] = [
     { img: 'assets/img/github.png', link: 'https://github.com/JessicaManczak' },
     { img: 'assets/img/mail.png', link: 'mailto:manczakjessica@gmail.com' },
-    { img: 'assets/img/linkedin.png', link: 'https://www.linkedin.com/in/jessica-manczak-b77a09352/' }
+   /*  { img: 'assets/img/linkedin.png', link: 'https://www.linkedin.com/in/jessica-manczak-b77a09352/' } */
   ]
 }
