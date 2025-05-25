@@ -1,0 +1,115 @@
+{
+  "HEADERLINK": {
+    "ABOUTME": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Kontakt"
+  },
+
+  "FRONTPAGE_INFO": {
+    "ROTATE": "Ich bin",
+    "JOB": "FRONTEND-ENTWICKLERIN"
+  },
+
+  "CONTACT_BUTTONS": {
+    "FRONT_TALK": "Reden wir",
+    "SKILLS_TALK": "Kontakt aufnehmen"
+  },
+
+  "SCROLL_DOWN": {
+    "SCROLL": "Runter"
+  },
+
+  "ABOUT_ME_INFO": {
+    "ABOUT": "Über mich",
+    "INTRO": "Hallo, ich bin eine deutschsprachige Frontend-Entwicklerin aus der Nähe von Aachen.<br>Motiviert durch die grenzenlosen Möglichkeiten der IT,<br>begeistere ich mich für die Gestaltung visuell ansprechender<br>und intuitiver Websites und Anwendungen."
+  },
+
+  "ABOUT_ME_SKILLS": {
+    "INFO_1": "Ich bin flexibel in Bezug auf Arbeitsumgebungen und kann<br>sowohl vor Ort in Aachen als auch remote<br>effektiv arbeiten.",
+    "INFO_2": "Ich bin aufgeschlossen und suche stets nach<br>persönlichen Herausforderungen, um mein Wissen<br>und meine Fähigkeiten kontinuierlich zu verbessern.",
+    "INFO_3": "Für mich ist Programmieren nicht nur das Schreiben von Code,<br>sondern eine kreative Form des Problemlösens.<br>Ich bin stolz darauf, komplexe technische Herausforderungen<br>in einfache, benutzerfreundliche Lösungen zu verwandeln.<br>So unterstütze ich dich dabei, deine Ziele zu erreichen<br>und deine Visionen zum Leben zu erwecken."
+  },
+
+  "SKILLS_INFORMATION": {
+    "TITLE": "Skills",
+    "EXPERIENCE": "Ich habe Erfahrung in<br> der Umsetzung von Projekten<br> mit verschiedenen Frontend-Technologien<br> und Konzepten gesammelt.",
+    "LOOKING": "Auf der Suche nach",
+    "ANOTHER_SKILL": "einer anderen Fähigkeit?",
+    "MESSAGE": "Kontaktiere mich gerne.<br>Ich freue mich darauf, mein Wissen weiter auszubauen."
+  },
+
+  "PROJECTS": {
+    "DESCRIPTION": "Hier findest du eine Auswahl meiner Arbeiten – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+  },
+
+  "SINGLE_PROJECT": {
+    "DESCRIPTION_1": "Ein Aufgabenmanager, inspiriert vom Kanban-System.<br>Erstelle und organisiere Aufgaben per Drag & Drop.<br>Weise Benutzer und Kategorien zu.",
+    "DESCRIPTION_2": "Ein einfaches Jump-and-Run-Spiel basierend auf<br>einem objektorientierten Ansatz.<br>Hilf Sharkie, Münzen und Giftflaschen zu sammeln.<br>Kämpfe gegen den Killerwal.",
+    "DESCRIPTION_3": "Diese App ist ein Slack-Clone.<br>Sie revolutioniert die Teamkommunikation und Zusammenarbeit.<br>Echtzeit-Nachrichten und eine übersichtliche Kanalstruktur."
+  },
+
+  "CONTACT": {
+    "TITLE": "Kontakt"
+  },
+
+  "CONTACT_FORM": {
+    "TITLE": "Ein Problem zu lösen?",
+    "DESCRIPTION": "Kontaktiere mich über dieses Formular. Ich freue mich darauf,<br>von dir zu hören, deine Ideen kennenzulernen und<br>mit meiner Arbeit zu deinen Projekten beizutragen.",
+    "BONUS_INFO": "Brauchst du eine Frontend-Entwicklerin? <b>Schreib mir!</b>",
+    "PLACEHOLDER_NAME": "Dein Name",
+    "ALERT_NAME": "Dein Name ist erforderlich",
+    "PLACEHOLDER_MAIL": "Deine E-Mail",
+    "ALERT_MAIL": "Deine E-Mail ist erforderlich",
+    "PLACEHOLDER_MESSAGE": "Deine Nachricht",
+    "ALERT_MESSAGE": "Deine Nachricht ist leer",
+    "READ_PRIVACY_POLICY": "Ich habe die",
+    "PRIVACY_POLICY": "Datenschutzerklärung",
+    "READ_PRIVACY_POLICY2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "ALERT_PRIVACY_POLICY": "Bitte akzeptiere die Datenschutzerklärung.",
+    "BUTTON": "Nachricht senden"
+  },
+
+  "FOOTER": {
+    "LEGAL_NOTICE": "Impressum"
+  },
+
+  "MAIL_OVERLAY": {
+    "SUCCESS_MESSAGE": "Deine E-Mail wurde erfolgreich gesendet.\n\nIch werde dir so bald wie möglich antworten.\n\nDanke!",
+    "CLOSING_MESSAGE": "Dieses Fenster schließt sich automatisch."
+  },
+
+  "LEGAL_NOTICE": {
+    "TITLE": "Impressum",
+    "INFO": "Informationen gemäß § 5 TMG",
+    "DISCLAIMER": "Haftungsausschluss",
+    "CONTENT_LIABILITY": "Haftung für Inhalte",
+    "CONTENT_INFO": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt.<br>Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen.",
+    "LINKS_LIABILITY": "Haftung für Links",
+    "LINKS_INFO": "Mein Portfolio kann Links zu externen Websites Dritter enthalten. Auf deren Inhalte habe ich keinen Einfluss<br>und kann daher keine Haftung dafür übernehmen.",
+    "COPYRIGHT": "Urheberrecht",
+    "COPYRIGHT_INFO": "Die Inhalte und Werke, die ich auf dieser Website erstellt habe, unterliegen dem Urheberrecht.<br>Jede Vervielfältigung, Bearbeitung oder Verbreitung bedarf meiner ausdrücklichen Genehmigung."
+  },
+
+  "PRIVACY_POLICY": {
+    "TITLE": "Datenschutzerklärung",
+    "INFO": "Allgemeine Informationen",
+    "INFO2": "Diese Datenschutzerklärung erklärt, wie personenbezogene Daten auf meiner Portfolio-Website verarbeitet werden.",
+    "INFO3": "Verantwortlich für die Datenverarbeitung",
+    "DATA_COLLECTING": "Erhebung und Verarbeitung von Daten",
+    "SERVER_LOG": "Server-Log-Dateien",
+    "SERVER_LOG_INFO": "Beim Besuch dieser Website werden automatisch bestimmte Daten vom Server erfasst und in Logdateien gespeichert.<br>Diese umfassen:<br> • IP-Adresse<br> • Datum und Uhrzeit des Zugriffs<br> • Browsertyp und -version<br> • Betriebssystem<br> • Referrer-URL (zuvor besuchte Seite)<br> Diese Daten dienen der technischen Sicherheit und Optimierung der Website und werden nicht<br>mit bestimmten Personen verknüpft.",
+    "FONTS": "Google Fonts",
+    "FONTS_INFO": "Diese Website nutzt Google Fonts, um ein einheitliches und ansprechendes Design zu gewährleisten.<br>Beim Zugriff auf diese Schriftarten kann dein Browser Daten wie deine IP-Adresse an Google übertragen.",
+    "RIGHTS": "Deine Rechte",
+    "RIGHTS_INFO": "Du hast das Recht:<br> • Informationen über gespeicherte personenbezogene Daten anzufordern.<br> • Die Berichtigung oder Löschung deiner Daten zu verlangen.<br> • Unter bestimmten Bedingungen der Datenverarbeitung zu widersprechen.<br> Zur Ausübung dieser Rechte kontaktiere mich unter manczakjessica@gmail.com.",
+    "DATA_SECURITY": "Datensicherheit",
+    "DATA_SECURITY_INFO": "Ich ergreife geeignete Maßnahmen, um personenbezogene Daten vor unbefugtem Zugriff oder Missbrauch zu schützen.",
+    "UPDATE": "Änderungen dieser Datenschutzerklärung",
+    "PRIVACY_POLICY_UPDATE": "Ich kann diese Datenschutzerklärung bei Bedarf aktualisieren. Die jeweils aktuelle Version ist jederzeit auf dieser<br>Website verfügbar."
+  },
+
+  "SKILLBUBBLE": {
+    "TITLE": "Ich habe besonderes Lern-Interesse an "
+  }
+}
