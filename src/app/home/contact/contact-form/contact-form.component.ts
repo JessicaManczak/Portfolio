@@ -31,7 +31,7 @@ export class ContactFormComponent {
   }
 
   post = {
-    endPoint: 'https://github.com//JessicaManczak//Portfolio//blob//main//src//app//sendMail.php',
+    endPoint: 'https://jessica-manczak.developerakademie.net//angular-projects//sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
