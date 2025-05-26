@@ -25,7 +25,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $headers[] = 'MIME-Version: 1.0';
         $headers[] = 'Content-type: text/html; charset=utf-8';
 
-        $headers[] = "From: noreply@jessica-manczak.de";
+        $headers[] = "From: noreply@jessicamanczak.de";
 
         mail($recipient, $subject, $message, implode("\r\n", $headers));
         break;
