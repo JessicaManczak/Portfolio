@@ -31,11 +31,11 @@ export class ContactFormComponent {
   }
 
   post = {
-    endPoint: 'https://jessica-manczak.developerakademie.net//angular-projects//sendMail.php',
-    body: (payload: any) => JSON.stringify(payload),
+    endPoint: 'https://formspree.io/f/mwpodgzw',
+    body: (payload: any) => payload /* JSON.stringify(payload) */,
     options: {
       headers: {
-        'Content-Type': 'text/plain',
+        'Content-Type': 'application/x-www-form-urlencoded' /* 'Content-Type': 'text/plain' */,
         responseType: 'text',
       },
     },
